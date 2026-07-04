@@ -1,0 +1,270 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+
+
+	<!-- ======================================================================
+
+		MAIL COMPOSITION WINDOW
+
+	-->
+
+	<Label item="COMPMAIL_FromLabel">
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>5</TopAnchorOffset>
+		<RightAnchorOffset>75</RightAnchorOffset>
+		<BottomAnchorOffset>48</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>From:</Text>
+		<TextColor>
+			<!-- c_crLtBlueCool -->
+			<R>138</R>
+			<G>163</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<Label item="COMPMAIL_ToLabel">
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>39</TopAnchorOffset>
+		<RightAnchorOffset>75</RightAnchorOffset>
+		<BottomAnchorOffset>84</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>To:</Text>
+		<TextColor>
+			<!-- c_crLtBlueCool -->
+			<R>138</R>
+			<G>163</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<Label item="COMPMAIL_SubjectLabel">
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>72</TopAnchorOffset>
+		<RightAnchorOffset>75</RightAnchorOffset>
+		<BottomAnchorOffset>123</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>Subject:</Text>
+		<TextColor>
+			<!-- c_crLtBlueCool -->
+			<R>138</R>
+			<G>163</G>
+			<B>255</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<Label item="COMPMAIL_FromAddressLabel">
+		<ScreenID>FromAddressLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>87</LeftAnchorOffset>
+		<TopAnchorOffset>5</TopAnchorOffset>
+		<RightAnchorOffset>90</RightAnchorOffset>
+		<BottomAnchorOffset>48</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>SOE.EQ.Server.Character</Text>
+		<TextColor>
+			<R>200</R>
+			<G>200</G>
+			<B>200</B>
+		</TextColor>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<Editbox item="COMPMAIL_ToField">
+		<ScreenID>ToField</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<Style_Border>true</Style_Border> 
+		<LeftAnchorOffset>81</LeftAnchorOffset>
+		<TopAnchorOffset>36</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>66</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Editbox>
+
+	<Editbox item="COMPMAIL_SubjectField">
+		<ScreenID>SubjectField</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<Style_Border>true</Style_Border> 
+		<LeftAnchorOffset>81</LeftAnchorOffset>
+		<TopAnchorOffset>69</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>99</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Editbox>
+
+	<Editbox item="COMPMAIL_TextField">
+		<ScreenID>TextField</ScreenID>
+		<Style_Multiline>true</Style_Multiline>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<Style_VScroll>true</Style_VScroll>
+		<Style_Border>true</Style_Border> 
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>102</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>36</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Editbox>
+
+	<Button item="COMPMAIL_Send">
+		<ScreenID>SendButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>33</TopAnchorOffset>
+		<RightAnchorOffset>138</RightAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Send</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+
+	<Button item="COMPMAIL_Cancel">
+		<ScreenID>CancelButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>138</LeftAnchorOffset>
+		<TopAnchorOffset>33</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Cancel</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+
+	<Button item="COMPMAIL_AddressBookButton">
+		<ScreenID>AddressBookButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		
+		<LeftAnchorOffset>150</LeftAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>33</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Address Book</TooltipReference>
+		<Template>BDT_Normal</Template>
+		<Text>Address Book</Text>		
+	</Button>
+
+	<Button item="COMPMAIL_SyncWithAddressBookButton">
+		<ScreenID>SyncWithAddressBookButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+
+		<LeftAnchorOffset>243</LeftAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<RightAnchorOffset>153</RightAnchorOffset>
+		<BottomAnchorOffset>33</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Sync with Address Book</TooltipReference>
+		<Template>BDT_Normal</Template>
+		<Text>Sync</Text>
+	</Button>
+
+	<Screen item="MailCompositionWindow">
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>50</X>
+			<Y>50</Y>
+		</Location>
+		<Size>
+			<CX>750</CX>
+			<CY>450</CY>
+		</Size>
+		<KeepOnScreen>true</KeepOnScreen>
+		<KeepOnScreenOffset>
+			<X>-5</X>
+			<Y>-5</Y>
+		</KeepOnScreenOffset>			
+		<Text>Compose New Message</Text>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>This is the mail composition window.</TooltipReference>
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Qmarkbox>true</Style_Qmarkbox>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Escapable>false</Escapable>
+		<Pieces>COMPMAIL_FromLabel</Pieces>
+		<Pieces>COMPMAIL_ToLabel</Pieces>
+		<Pieces>COMPMAIL_SubjectLabel</Pieces>
+		<Pieces>COMPMAIL_FromAddressLabel</Pieces>
+		<Pieces>COMPMAIL_ToField</Pieces>
+		<Pieces>COMPMAIL_SubjectField</Pieces>
+		<Pieces>COMPMAIL_TextField</Pieces>
+		<Pieces>COMPMAIL_Send</Pieces>
+		<Pieces>COMPMAIL_Cancel</Pieces>
+		<Pieces>COMPMAIL_SyncWithAddressBookButton</Pieces>
+		<Pieces>COMPMAIL_AddressBookButton</Pieces>
+	</Screen>
+
+</XML>

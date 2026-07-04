@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+
+	<Listbox item="ZPW_ZoneList">
+		<ScreenID>ZPW_ZoneList</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<Style_Border>true</Style_Border>
+		<Style_VScroll>true</Style_VScroll>
+		<Columns>
+			<Width>225</Width>
+			<Heading>Zone</Heading>
+		</Columns>
+		<Columns>
+			<Width>150</Width>
+			<Heading>Transfer Info</Heading>
+		</Columns>
+	</Listbox>
+
+	<Screen item="ZonePathWnd">
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>0</X>
+			<Y>2</Y>
+		</Location>
+		<Size>
+			<CX>438</CX>
+			<CY>165</CY>
+		</Size>
+		<KeepOnScreen>true</KeepOnScreen>
+		<KeepOnScreenOffset>
+			<X>-5</X>
+			<Y>-5</Y>
+		</KeepOnScreenOffset>			
+		<Text>Zone Path</Text>
+		<MinHSize>390</MinHSize>
+		<MinVSize>150</MinVSize>		
+		<Style_Transparent>false</Style_Transparent>
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Qmarkbox>true</Style_Qmarkbox>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Pieces>ZPW_ZoneList</Pieces>
+	</Screen>
+
+
+</XML>

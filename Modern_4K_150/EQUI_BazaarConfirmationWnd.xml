@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<Button item="BZC_ItemIcon">
+		<ScreenID>BZC_ItemIcon</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>15</X>
+			<Y>15</Y>
+		</Location>
+		<Size>
+			<CX>60</CX>
+			<CY>60</CY>
+		</Size>
+		<DecalSize>
+			<CX>60</CX>
+			<CY>60</CY>
+		</DecalSize>
+	</Button>
+	<Label item="BZC_ItemLabel">
+		<ScreenID>BZC_ItemLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Text>Item Name</Text>
+		<Font>6</Font>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>15</TopAnchorOffset>
+		<BottomAnchorOffset>255</BottomAnchorOffset>
+		<LeftAnchorOffset>90</LeftAnchorOffset>
+		<RightAnchorOffset>15</RightAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
+	</Label>
+	<Label item="BZC_TotalPrice">
+		<ScreenID>BZC_TotalPrice</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Text>Item Price: [xxxxx]</Text>
+		<Font>5</Font>
+		<AlignCenter>true</AlignCenter>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>248</TopAnchorOffset>
+		<BottomAnchorOffset>218</BottomAnchorOffset>
+		<LeftAnchorOffset>15</LeftAnchorOffset>
+		<RightAnchorOffset>15</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
+	</Label>
+	<Label item="BZC_DeliveryLabel">
+		<ScreenID>BZC_DeliveryLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Text>Delivery Options</Text>
+		<Font>5</Font>
+		<AlignCenter>true</AlignCenter>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>203</TopAnchorOffset>
+		<BottomAnchorOffset>173</BottomAnchorOffset>
+		<LeftAnchorOffset>15</LeftAnchorOffset>
+		<RightAnchorOffset>15</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Tooltip>false</Style_Tooltip>
+	</Label>
+	<Button item="BZC_TokenIcon">
+		<ScreenID>BZC_TokenIcon</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>158</TopAnchorOffset>
+		<BottomAnchorOffset>98</BottomAnchorOffset>
+		<LeftAnchorOffset>75</LeftAnchorOffset>
+		<RightAnchorOffset>135</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<DecalSize>
+			<CX>60</CX>
+			<CY>60</CY>
+		</DecalSize>
+		<TooltipReference>Cost to ship directly to you.</TooltipReference>
+	</Button>
+	<Label item="BZC_TokenLabel">
+		<ScreenID>BZC_TokenLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Text>x 2</Text>
+		<TooltipReference>Cost to ship directly to you.</TooltipReference>
+		<Font>5</Font>
+		<AlignCenter>true</AlignCenter>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>143</TopAnchorOffset>
+		<BottomAnchorOffset>113</BottomAnchorOffset>
+		<LeftAnchorOffset>105</LeftAnchorOffset>
+		<RightAnchorOffset>210</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<Style_Tooltip>true</Style_Tooltip>
+	</Label>
+	<Button item="BZC_UseTokenButton">
+		<ScreenID>BZC_UseTokenButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<Text>To Me</Text>
+		<TooltipReference>Click here to use Expedient Delivery Vouchers to deliver the item directly to you.</TooltipReference>
+		<TopAnchorOffset>90</TopAnchorOffset>
+		<BottomAnchorOffset>60</BottomAnchorOffset>
+		<LeftAnchorOffset>60</LeftAnchorOffset>
+		<RightAnchorOffset>210</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<Template>BDT_Blue</Template>
+	</Button>
+	<Button item="BZC_PlatIcon">
+		<ScreenID>BZC_PlatIcon</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>158</TopAnchorOffset>
+		<BottomAnchorOffset>98</BottomAnchorOffset>
+		<LeftAnchorOffset>210</LeftAnchorOffset>
+		<RightAnchorOffset>150</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<ButtonDrawTemplate>
+			<Normal>A_PlatinumCoinLarge</Normal>
+		</ButtonDrawTemplate>
+		<DecalSize>
+			<CX>60</CX>
+			<CY>60</CY>
+		</DecalSize>
+		<TooltipReference>Cost to ship to your parcels.</TooltipReference>
+	</Button>
+	<Label item="BZC_PlatLabel">
+		<ScreenID>BZC_PlatLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Text>10000p</Text>
+		<TooltipReference>Cost to ship to your parcels.</TooltipReference>
+		<Font>5</Font>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>143</TopAnchorOffset>
+		<BottomAnchorOffset>113</BottomAnchorOffset>
+		<LeftAnchorOffset>143</LeftAnchorOffset>
+		<RightAnchorOffset>60</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+	</Label>
+	<Button item="BZC_UsePlatButton">
+		<ScreenID>BZC_UsePlatButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<Text>To Parcels</Text>
+		<TooltipReference>Click here to use Platinum to deliver the item to your parcels.</TooltipReference>
+		<TopAnchorOffset>90</TopAnchorOffset>
+		<BottomAnchorOffset>60</BottomAnchorOffset>
+		<LeftAnchorOffset>210</LeftAnchorOffset>
+		<RightAnchorOffset>60</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Template>BDT_Blue</Template>
+	</Button>
+	<Button item="BZC_CancelButton">
+		<ScreenID>BZC_CancelButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<Text>Cancel</Text>
+		<TopAnchorOffset>38</TopAnchorOffset>
+		<BottomAnchorOffset>8</BottomAnchorOffset>
+		<LeftAnchorOffset>83</LeftAnchorOffset>
+		<RightAnchorOffset>8</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Template>BDT_Blue</Template>
+	</Button>
+	<Screen item="BazaarConfirmationWnd">
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>150</X>
+			<Y>100</Y>
+		</Location>
+		<Size>
+			<CX>600</CX>
+			<CY>375</CY>
+		</Size>
+		<MinHSize>450</MinHSize>
+		<MinVSize>315</MinVSize>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_AutoVScroll>false</Style_AutoVScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Titlebar>false</Style_Titlebar>
+		<Style_Closebox>false</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Style_ClientMovable>true</Style_ClientMovable>
+		<DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
+		<Pieces>BZC_ItemIcon</Pieces>
+		<Pieces>BZC_ItemLabel</Pieces>
+		<Pieces>BZC_TotalPrice</Pieces>
+		<Pieces>BZC_DeliveryLabel</Pieces>
+		<Pieces>BZC_PlatIcon</Pieces>
+		<Pieces>BZC_PlatLabel</Pieces>
+		<Pieces>BZC_UsePlatButton</Pieces>
+		<Pieces>BZC_TokenIcon</Pieces>
+		<Pieces>BZC_TokenLabel</Pieces>
+		<Pieces>BZC_UseTokenButton</Pieces>
+		<Pieces>BZC_CancelButton</Pieces>
+	</Screen>
+</XML>

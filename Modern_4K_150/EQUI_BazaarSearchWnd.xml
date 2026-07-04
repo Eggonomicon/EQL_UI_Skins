@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<Label item="BZR_SearchResultLabel">
+		<ScreenID>BZR_SearchResultLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>225</LeftAnchorOffset>
+		<RightAnchorOffset>360</RightAnchorOffset>
+		<TopAnchorOffset>8</TopAnchorOffset>
+		<BottomAnchorOffset>30</BottomAnchorOffset>
+		<Text>Search Results</Text>
+		<NoWrap>true</NoWrap>
+	</Label>
+	<Button item="BZR_RequestItemButton">
+		<ScreenID>BZR_RequestItemButton</ScreenID>
+		<TooltipReference>Press to inspect the selected item.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>371</LeftAnchorOffset>
+		<RightAnchorOffset>446</RightAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<BottomAnchorOffset>27</BottomAnchorOffset>
+		<Text>Inspect</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+	<Button item="BZR_RequestPreviewButton">
+		<ScreenID>BZR_RequestPreviewButton</ScreenID>
+		<TooltipReference>Press to preview the selected item.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>447</LeftAnchorOffset>
+		<RightAnchorOffset>522</RightAnchorOffset>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<BottomAnchorOffset>27</BottomAnchorOffset>
+		<Text>Preview</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+	<Listbox item="BZR_ItemList">
+		<ScreenID>BZR_ItemList</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<TooltipReference>Right click an item to inspect the item. Right click on the player name to locate them.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>218</LeftAnchorOffset>
+		<TopAnchorOffset>30</TopAnchorOffset>
+		<RightAnchorOffset>8</RightAnchorOffset>
+		<BottomAnchorOffset>42</BottomAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Border>true</Style_Border>
+		<Style_VScroll>true</Style_VScroll>
+		<Columns>
+			<Width>30</Width>
+			<Heading></Heading>
+		</Columns>
+		<Columns>
+			<Width>188</Width>
+			<Heading>Item Name</Heading>
+		</Columns>
+    <Columns>
+      <Width>60</Width>
+      <Heading>Qty</Heading>
+    </Columns>
+		<Columns>
+			<Width>108</Width>
+			<Header>Header_PlatCoin</Header>
+		</Columns>
+		<Columns>
+			<Width>36</Width>
+			<Header>Header_GoldCoin</Header>
+		</Columns>
+		<Columns>
+			<Width>36</Width>
+			<Header>Header_SilvCoin</Header>
+		</Columns>
+		<Columns>
+			<Width>36</Width>
+			<Header>Header_CoppCoin</Header>
+		</Columns>
+		<Columns>
+			<Width>120</Width>
+			<Heading>Trader</Heading>
+		</Columns>
+		<Columns>
+			<Width>45</Width>
+			<Heading></Heading>
+		</Columns>
+		<Columns>
+			<Width>120</Width>
+			<Heading>Stat</Heading>
+		</Columns>
+	</Listbox>
+	<Button item="BZR_Default">
+		<ScreenID>BZR_Default</ScreenID>
+		<TooltipReference>Resets search criteria to default.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>2</TopAnchorOffset>
+		<BottomAnchorOffset>27</BottomAnchorOffset>
+		<LeftAnchorOffset>128</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<Text>Reset</Text>
+		<Template>BDT_Normal</Template>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+	</Button>
+	<Button item="BZR_WelcomeButton">
+		<ScreenID>BZR_WelcomeButton</ScreenID>
+		<TooltipReference>Press to get the current number of traders and items for sale.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>218</LeftAnchorOffset>
+		<TopAnchorOffset>36</TopAnchorOffset>
+		<RightAnchorOffset>323</RightAnchorOffset>
+		<BottomAnchorOffset>6</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<Text>Welcome</Text>
+		<Template>BDT_Normal</Template>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+	</Button>
+	<Button item="BZR_UpdatePlayerButton">
+		<ScreenID>BZR_UpdatePlayerButton</ScreenID>
+		<TooltipReference>Press this button when enabled to update the trader search drop down list.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>330</LeftAnchorOffset>
+		<TopAnchorOffset>36</TopAnchorOffset>
+		<RightAnchorOffset>473</RightAnchorOffset>
+		<BottomAnchorOffset>6</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<Text>Update Traders</Text>
+		<Template>BDT_Normal</Template>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+	</Button>
+	<Button item="BZR_FindTraderButton">
+		<ScreenID>BZR_FindTraderButton</ScreenID>
+		<TooltipReference>Create a path from you to the selected trader.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>480</LeftAnchorOffset>
+		<TopAnchorOffset>36</TopAnchorOffset>
+		<RightAnchorOffset>593</RightAnchorOffset>
+		<BottomAnchorOffset>6</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<Text>Find Trader</Text>
+		<Template>BDT_Normal</Template>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+	</Button>
+	<Button item="BZR_HideTradersButton">
+		<ScreenID>BZR_HideTradersButton</ScreenID>
+		<TooltipReference>Hides all traders (makes them invisible to you).</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>600</LeftAnchorOffset>
+		<TopAnchorOffset>36</TopAnchorOffset>
+		<RightAnchorOffset>750</RightAnchorOffset>
+		<BottomAnchorOffset>6</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<Style_Checkbox>true</Style_Checkbox>
+		<Text>Hide All Traders</Text>
+		<Template>BDT_Normal</Template>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+	</Button>
+	<Button item="BZR_QueryButton">
+	<ScreenID>BZR_QueryButton</ScreenID>
+    <AutoStretch>true</AutoStretch>
+    <LeftAnchorOffset>42</LeftAnchorOffset>
+    <TopAnchorOffset>36</TopAnchorOffset>
+    <RightAnchorOffset>159</RightAnchorOffset>
+    <BottomAnchorOffset>6</BottomAnchorOffset>
+    <TopAnchorToTop>false</TopAnchorToTop>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorToLeft>true</RightAnchorToLeft>
+		<Text>Find Items</Text>
+    <TooltipReference>Search the Bazaar for a list of items that match your search criteria.</TooltipReference>
+		<Template>BDT_Normal</Template>
+		<!--<SoundPressed/>-->
+		<!--<SoundUp/>-->
+		<!--<SoundFlyby/>-->
+	</Button>
+	<Label item="BZR_ItemNameLabel">
+		<ScreenID>BZR_ItemNameLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>8</TopAnchorOffset>
+		<BottomAnchorOffset>30</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<Text>Item Name</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Editbox item="BZR_ItemNameInput">
+		<ScreenID>BZR_ItemNameInput</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<TooltipReference>Search by partial item name.</TooltipReference>
+		<Style_Border>true</Style_Border>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>30</TopAnchorOffset>
+		<BottomAnchorOffset>60</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+	</Editbox>
+	<Label item="BZR_PlayersLabel">
+		<ScreenID>BZR_PlayersLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>63</TopAnchorOffset>
+		<BottomAnchorOffset>86</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<Text>Traders</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Combobox item="BZR_PlayersCombobox">
+		<ScreenID>BZR_PlayersCombobox</ScreenID>
+		<DrawTemplate>WDT_InnerSolid</DrawTemplate>
+		<TooltipReference>List all items for sale by selected player.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>86</TopAnchorOffset>
+		<BottomAnchorOffset>123</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<ListHeight>120</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Style_Border>true</Style_Border>
+	</Combobox>
+	<Label item="BZR_ItemSlotLabel">
+		<ScreenID>BZR_ItemSlotLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>126</TopAnchorOffset>
+		<BottomAnchorOffset>149</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<Text>Select By Slot</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Combobox item="BZR_ItemSlotCombobox">
+		<ScreenID>BZR_ItemSlotCombobox</ScreenID>
+		<DrawTemplate>WDT_InnerSolid</DrawTemplate>
+		<TooltipReference>List all items that can be used in this slot.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>149</TopAnchorOffset>
+		<BottomAnchorOffset>186</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<ListHeight>120</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Style_Border>true</Style_Border>
+	</Combobox>
+	<Label item="BZR_StatSlotLabel">
+		<ScreenID>BZR_StatSlotLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>189</TopAnchorOffset>
+		<BottomAnchorOffset>212</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<Text>Select By Stat</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Combobox item="BZR_StatSlotCombobox">
+		<ScreenID>BZR_StatSlotCombobox</ScreenID>
+		<DrawTemplate>WDT_InnerSolid</DrawTemplate>
+		<TooltipReference>List all items that have this statistic.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>212</TopAnchorOffset>
+		<BottomAnchorOffset>249</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<ListHeight>120</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Style_Border>true</Style_Border>
+	</Combobox>
+	<Label item="BZR_RaceSlotLabel">
+		<ScreenID>BZR_RaceSlotLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>252</TopAnchorOffset>
+		<BottomAnchorOffset>275</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<Text>Select By Race</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Combobox item="BZR_RaceSlotCombobox">
+		<ScreenID>BZR_RaceSlotCombobox</ScreenID>
+		<DrawTemplate>WDT_InnerSolid</DrawTemplate>
+		<TooltipReference>List all items that can be worn by this race.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>275</TopAnchorOffset>
+		<BottomAnchorOffset>312</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<ListHeight>120</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Style_Border>true</Style_Border>
+	</Combobox>
+	<Label item="BZR_ClassSlotLabel">
+		<ScreenID>BZR_ClassSlotLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>315</TopAnchorOffset>
+		<BottomAnchorOffset>338</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<Text>Select By Class</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Combobox item="BZR_ClassSlotCombobox">
+		<ScreenID>BZR_ClassSlotCombobox</ScreenID>
+		<DrawTemplate>WDT_InnerSolid</DrawTemplate>
+		<TooltipReference>List all items that can be worn by this class.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>338</TopAnchorOffset>
+		<BottomAnchorOffset>375</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<ListHeight>120</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Style_Border>true</Style_Border>
+	</Combobox>
+	<Label item="BZR_ItemTypeLabel">
+		<ScreenID>BZR_ItemTypeLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>378</TopAnchorOffset>
+		<BottomAnchorOffset>399</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<Text>Select By Type</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Combobox item="BZR_ItemTypeCombobox">
+		<ScreenID>BZR_ItemTypeCombobox</ScreenID>
+		<DrawTemplate>WDT_InnerSolid</DrawTemplate>
+		<TooltipReference>List all items of this type.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>401</TopAnchorOffset>
+		<BottomAnchorOffset>438</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<ListHeight>120</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Style_Border>true</Style_Border>
+	</Combobox>
+
+	<Label item="BZR_MaxLevelLabel">
+		<ScreenID>BZR_MaxLevelLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>447</TopAnchorOffset>
+		<BottomAnchorOffset>470</BottomAnchorOffset>
+		<LeftAnchorOffset>113</LeftAnchorOffset>
+		<RightAnchorOffset>206</RightAnchorOffset>
+		<Text>Max Level</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Editbox item="BZR_MaxLevelInput">
+		<ScreenID>BZR_MaxLevelInput</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<TooltipReference>Enter a level for which items having a recommended or required level above it should not show.</TooltipReference>
+		<Style_Border>true</Style_Border>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>474</TopAnchorOffset>
+		<BottomAnchorOffset>504</BottomAnchorOffset>
+		<LeftAnchorOffset>113</LeftAnchorOffset>
+		<RightAnchorOffset>206</RightAnchorOffset>
+	</Editbox>
+	<Label item="BZR_MinLevelLabel">
+		<ScreenID>BZR_MinLevelLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>447</TopAnchorOffset>
+		<BottomAnchorOffset>470</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>101</RightAnchorOffset>
+		<Text>Min Level</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Editbox item="BZR_MinLevelInput">
+		<ScreenID>BZR_MinLevelInput</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<TooltipReference>Enter a level for which items having a recommended or required level below it should not show.</TooltipReference>
+		<Style_Border>true</Style_Border>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>474</TopAnchorOffset>
+		<BottomAnchorOffset>504</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>101</RightAnchorOffset>
+	</Editbox>
+	<Label item="BZR_MaxPriceLabel">
+		<ScreenID>BZR_MaxPriceLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>510</TopAnchorOffset>
+		<BottomAnchorOffset>533</BottomAnchorOffset>
+		<LeftAnchorOffset>113</LeftAnchorOffset>
+		<RightAnchorOffset>206</RightAnchorOffset>
+		<Text>Max Price</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Editbox item="BZR_MaxPriceInput">
+		<ScreenID>BZR_MaxPriceInput</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<TooltipReference>Enter a price in platinum that is greater than the value in the Min Price edit window.</TooltipReference>
+		<Style_Border>true</Style_Border>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>537</TopAnchorOffset>
+		<BottomAnchorOffset>567</BottomAnchorOffset>
+		<LeftAnchorOffset>113</LeftAnchorOffset>
+		<RightAnchorOffset>206</RightAnchorOffset>
+	</Editbox>
+	<Label item="BZR_MinPriceLabel">
+		<ScreenID>BZR_MinPriceLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>510</TopAnchorOffset>
+		<BottomAnchorOffset>533</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>101</RightAnchorOffset>
+		<Text>Min Price</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Editbox item="BZR_MinPriceInput">
+		<ScreenID>BZR_MinPriceInput</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<TooltipReference>Enter a price in platinum that is less than the value in the Max Price edit window.</TooltipReference>
+		<Style_Border>true</Style_Border>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>537</TopAnchorOffset>
+		<BottomAnchorOffset>567</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>101</RightAnchorOffset>
+	</Editbox>
+	<Label item="BZR_MaxResultsPerTraderLabel">
+		<ScreenID>BZR_MaxResultsPerTraderLabel</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>573</TopAnchorOffset>
+		<BottomAnchorOffset>596</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<Text>Max Results Per Trader</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+	<Editbox item="BZR_MaxResultsPerTraderInput">
+		<ScreenID>BZR_MaxResultsPerTraderInput</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<TooltipReference>How many results in a search can belong to a single trader.</TooltipReference>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>600</TopAnchorOffset>
+		<BottomAnchorOffset>630</BottomAnchorOffset>
+		<LeftAnchorOffset>8</LeftAnchorOffset>
+		<RightAnchorOffset>203</RightAnchorOffset>
+		<ListHeight>120</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Style_Border>true</Style_Border>
+	</Editbox>
+	<Button item="BZR_BuyButton">
+		<ScreenID>BZR_BuyButton</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>0</TopAnchorOffset>
+		<BottomAnchorOffset>30</BottomAnchorOffset>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<RightAnchorOffset>45</RightAnchorOffset>
+		<Text>Buy</Text>
+		<Template>BDT_Blue</Template>
+	</Button>
+  <Label item="BZR_ItemPrestigeLabel">
+    <ScreenID>BZR_ItemPrestigeLabel</ScreenID>
+	<AutoStretch>true</AutoStretch>
+	<TopAnchorOffset>635</TopAnchorOffset>
+    <BottomAnchorOffset>657</BottomAnchorOffset>
+	<LeftAnchorOffset>8</LeftAnchorOffset>
+	<RightAnchorOffset>203</RightAnchorOffset>
+    <Text>Select By Prestige</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+  </Label>
+  <Combobox item="BZR_ItemPrestigeCombobox">
+    <ScreenID>BZR_ItemPrestigeCombobox</ScreenID>
+    <DrawTemplate>WDT_InnerSolid</DrawTemplate>
+    <TooltipReference>Filter based on item Prestige status.</TooltipReference>
+	<AutoStretch>true</AutoStretch>
+    <TopAnchorOffset>657</TopAnchorOffset>
+    <BottomAnchorOffset>695</BottomAnchorOffset>
+    <LeftAnchorOffset>8</LeftAnchorOffset>
+    <RightAnchorOffset>203</RightAnchorOffset>
+    <ListHeight>120</ListHeight>
+    <Button>BDT_Combo</Button>
+    <Style_Border>true</Style_Border>
+  </Combobox>
+  <Label item="BZR_ItemAugmentLabel">
+    <ScreenID>BZR_ItemAugmentLabel</ScreenID>
+	<AutoStretch>true</AutoStretch>
+	<TopAnchorOffset>699</TopAnchorOffset>
+    <BottomAnchorOffset>720</BottomAnchorOffset>
+	<LeftAnchorOffset>8</LeftAnchorOffset>
+	<RightAnchorOffset>203</RightAnchorOffset>
+    <Text>Select By Augment Slot</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+  </Label>
+  <Combobox item="BZR_ItemAugmentCombobox">
+    <ScreenID>BZR_ItemAugmentCombobox</ScreenID>
+    <DrawTemplate>WDT_InnerSolid</DrawTemplate>
+	<AutoStretchList>true</AutoStretchList>
+    <TooltipReference>Filter based on item augment slot.</TooltipReference>
+	<AutoStretch>true</AutoStretch>
+    <TopAnchorOffset>722</TopAnchorOffset>
+    <BottomAnchorOffset>759</BottomAnchorOffset>
+    <LeftAnchorOffset>8</LeftAnchorOffset>
+    <RightAnchorOffset>203</RightAnchorOffset>
+    <ListHeight>120</ListHeight>
+    <Button>BDT_Combo</Button>
+    <Style_Border>true</Style_Border>
+  </Combobox>
+<Screen item="BazaarSearchWnd">
+		<ScreenID />
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>100</X>
+			<Y>50</Y>
+		</Location>
+		<Size>
+			<CX>1050</CX>
+			<CY>900</CY>
+		</Size>
+		<MinVSize>803</MinVSize>
+		<MinHSize>755</MinHSize>
+		<Text>Bazaar Search Window</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<!--<TooltipReference/>-->
+		<DrawTemplate>WDT_Def</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Pieces>BZR_MaxPriceInput</Pieces>
+		<Pieces>BZR_MinPriceInput</Pieces>
+		<Pieces>BZR_MaxPriceLabel</Pieces>
+		<Pieces>BZR_MinPriceLabel</Pieces>
+		<Pieces>BZR_MaxLevelInput</Pieces>
+		<Pieces>BZR_MinLevelInput</Pieces>
+		<Pieces>BZR_MaxLevelLabel</Pieces>
+		<Pieces>BZR_MinLevelLabel</Pieces>
+		<Pieces>BZR_ItemNameInput</Pieces>
+		<Pieces>BZR_MaxResultsPerTraderLabel</Pieces>
+		<Pieces>BZR_MaxResultsPerTraderInput</Pieces>
+		<Pieces>BZR_QueryButton</Pieces>
+		<Pieces>BZR_ItemNameLabel</Pieces>
+		<Pieces>BZR_PlayersLabel</Pieces>
+		<Pieces>BZR_ItemSlotLabel</Pieces>
+		<Pieces>BZR_StatSlotLabel</Pieces>
+		<Pieces>BZR_RaceSlotLabel</Pieces>
+		<Pieces>BZR_ClassSlotLabel</Pieces>
+		<Pieces>BZR_ItemTypeLabel</Pieces>
+		<Pieces>BZR_ItemTypeCombobox</Pieces>
+		<Pieces>BZR_ClassSlotCombobox</Pieces>
+		<Pieces>BZR_RaceSlotCombobox</Pieces>
+		<Pieces>BZR_StatSlotCombobox</Pieces>
+		<Pieces>BZR_ItemSlotCombobox</Pieces>
+		<Pieces>BZR_PlayersCombobox</Pieces>
+		<Pieces>BZR_ItemList</Pieces>
+		<Pieces>BZR_SearchResultLabel</Pieces>
+		<Pieces>BZR_WelcomeButton</Pieces>
+		<Pieces>BZR_UpdatePlayerButton</Pieces>
+		<Pieces>BZR_RequestItemButton</Pieces>
+		<Pieces>BZR_RequestPreviewButton</Pieces>
+		<Pieces>BZR_FindTraderButton</Pieces>
+		<Pieces>BZR_HideTradersButton</Pieces>
+		<Pieces>BZR_Default</Pieces>
+		<Pieces>BZR_BuyButton</Pieces>
+    <Pieces>BZR_ItemPrestigeLabel</Pieces>
+    <Pieces>BZR_ItemPrestigeCombobox</Pieces>
+    <Pieces>BZR_ItemAugmentLabel</Pieces>
+    <Pieces>BZR_ItemAugmentCombobox</Pieces>
+</Screen>
+</XML>

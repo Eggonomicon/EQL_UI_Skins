@@ -1,0 +1,218 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	
+	<Button item="VRW_Vote_Btn">
+		<ScreenID>VRW_Vote_Btn</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Size>
+			<CX>125</CX>
+			<CY>30</CY>
+		</Size>
+		<Location>
+			<X>0</X>
+			<Y>0</Y>
+		</Location>
+		<Text>Open Polls</Text>
+		<TooltipReference>Opens the voting window for all open polls.</TooltipReference>
+		<Template>BDT_Normal</Template>
+	</Button>
+	<Listbox item="VRW_ClosedQuestions_List">
+		<ScreenID>VRW_ClosedQuestions_List</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>	
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>53</TopAnchorOffset>
+		<BottomAnchorOffset>0</BottomAnchorOffset>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Border>true</Style_Border>
+		<Style_VScroll>true</Style_VScroll>
+		<Style_AutoVScroll>true</Style_AutoVScroll>
+		<Style_HScroll>true</Style_HScroll>
+		<Style_AutoHScroll>true</Style_AutoHScroll>
+		<Columns>
+			<Width>105</Width>
+			<Heading>Status</Heading>
+		</Columns>
+		<Columns>
+			<Width>375</Width>
+			<Heading>Poll</Heading>
+		</Columns>
+		<Columns>
+			<Width>113</Width>
+			<Heading>Open Date</Heading>
+		</Columns>
+		<Columns>
+			<Width>113</Width>
+			<Heading>Close Date</Heading>
+		</Columns>
+		<Columns>
+			<Width>225</Width>
+			<Heading>Polling Location</Heading>
+		</Columns>
+		<Columns>
+			<Width>15</Width>
+			<Heading></Heading>
+		</Columns>
+	</Listbox>
+	<Label item="VRW_Selection_Label">
+		<ScreenID>VRW_Selection_Label</ScreenID>
+		<Size>
+			<CX>90</CX>
+			<CY>26</CY>
+		</Size>
+		<Text>Your Vote:</Text>
+		<ResizeHeightToText>true</ResizeHeightToText>
+	</Label>
+	<Label item="VRW_SelectionValue_Label">
+		<ScreenID>VRW_SelectionValue_Label</ScreenID>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>105</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>[Value]</Text>
+		<ResizeHeightToText>true</ResizeHeightToText>
+	</Label>
+	<Screen item="VRW_Selection_Screen">
+		<ScreenID>VRW_Selection_Screen</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>0</TopAnchorOffset>
+		<BottomAnchorOffset>83</BottomAnchorOffset>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Sizable>false</Style_Sizable>
+		<Pieces>VRW_Selection_Label</Pieces>
+		<Pieces>VRW_SelectionValue_Label</Pieces>
+	</Screen>
+	<Label item="VRW_VotingResults_Label">
+		<ScreenID>VRW_VotingResults_Label</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Size>
+			<CX>158</CX>
+			<CY>30</CY>
+		</Size>
+		<Location>
+			<X>0</X>
+			<Y>90</Y>
+		</Location>
+		<Text>Voting Results:</Text>
+		<ResizeHeightToText>true</ResizeHeightToText>
+	</Label>
+	<Button item="VRW_WinnerTeleport_Btn">
+		<ScreenID>VRW_WinnerTeleport_Btn</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>83</TopAnchorOffset>
+		<BottomAnchorOffset>113</BottomAnchorOffset>
+		<LeftAnchorOffset>225</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Text>Teleport to Selected</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+	<Listbox item="VRW_Results_List">
+		<ScreenID>VRW_Results_List</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>113</TopAnchorOffset>
+		<BottomAnchorOffset>0</BottomAnchorOffset>
+		<LeftAnchorOffset>0</LeftAnchorOffset>
+		<RightAnchorOffset>0</RightAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Border>true</Style_Border>
+		<Style_VScroll>true</Style_VScroll>
+		<Style_AutoVScroll>true</Style_AutoVScroll>
+		<Columns>
+			<Width>60</Width>
+			<Heading>Rank</Heading>
+		</Columns>
+		<Columns>
+			<Width>450</Width>
+			<Heading></Heading>
+		</Columns>
+		<Columns>
+			<Width>75</Width>
+			<Heading></Heading>
+		</Columns>
+	</Listbox>
+	<Screen item="VRW_Top_Screen">
+		<ScreenID>VRW_Top_Screen</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Size>
+			<CX>263</CX>
+			<CY>263</CY>
+		</Size>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Sizable>false</Style_Sizable>
+		<Pieces>VRW_Vote_Btn</Pieces>
+		<Pieces>Listbox:VRW_ClosedQuestions_List</Pieces>
+	</Screen>
+	<Screen item="VRW_Bottom_Screen">
+		<ScreenID>VRW_Bottom_Screen</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Size>
+			<CX>263</CX>
+			<CY>488</CY>
+		</Size>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Sizable>false</Style_Sizable>
+		<Pieces>Screen:VRW_Selection_Screen</Pieces>
+		<Pieces>VRW_VotingResults_Label</Pieces>
+		<Pieces>VRW_WinnerTeleport_Btn</Pieces>
+		<Pieces>Listbox:VRW_Results_List</Pieces>
+	</Screen>
+	<VerticalLayoutBox item="VRW_Main_Layout">
+		<ScreenID>VRW_Main_Layout</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Border>false</Style_Border>
+		<Style_Transparent>true</Style_Transparent>
+		<Spacing>3</Spacing>
+		<Pieces>Screen:VRW_Top_Screen</Pieces>
+		<Pieces>Screen:VRW_Bottom_Screen</Pieces>
+	</VerticalLayoutBox>
+	<Screen item="VoteResultsWnd">
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>100</X>
+			<Y>25</Y>
+		</Location>
+		<Size>
+			<CX>750</CX>
+			<CY>750</CY>
+		</Size>
+		<MinHSize>450</MinHSize>
+		<MinVSize>150</MinVSize>
+		<Text>Polls</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Qmarkbox>true</Style_Qmarkbox>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Pieces>VRW_Main_Layout</Pieces>
+	</Screen>
+</XML>

@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+	<StaticAnimation item="ALW_Alert_Anim">
+		<ScreenID>ALW_Alert_Anim</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>6</X>
+			<Y>6</Y>
+		</Location>
+		<Size>
+			<CX>474</CX>
+			<CY>192</CY>
+		</Size>
+	</StaticAnimation>
+	<STMLbox item="ALW_Message_Box">
+		<ScreenID>ALW_Message_Box</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<Style_AutoVScroll>true</Style_AutoVScroll>
+		<Style_VScroll>true</Style_VScroll>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>198</TopAnchorOffset>
+		<BottomAnchorOffset>36</BottomAnchorOffset>
+		<LeftAnchorOffset>6</LeftAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<Style_Border>false</Style_Border>
+		<Style_Transparent>true</Style_Transparent>
+	</STMLbox>
+	<Button item="ALW_Action_Button">
+		<ScreenID>ALW_Action_Button</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Size>
+			<CX>60</CX>
+			<CY>24</CY>
+		</Size>
+		<Location>
+			<X>246</X>
+			<Y>0</Y>
+		</Location>
+		<Text>Action</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+	<Button item="ALW_Close_Button">
+		<ScreenID>ALW_Close_Button</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>312</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>60</CX>
+			<CY>24</CY>
+		</Size>
+		<Text>Minimize</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+	<Button item="ALW_Dismiss_Button">
+		<ScreenID>ALW_Dismiss_Button</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>378</X>
+			<Y>0</Y>
+		</Location>
+		<Size>
+			<CX>60</CX>
+			<CY>24</CY>
+		</Size>
+		<Text>Close</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+	<!-- Hide First Window user Alerts -->
+	<Button item="ALW_HideFirstWindowAlerts">
+		<RelativePosition>true</RelativePosition>
+		<ScreenID>ALW_HideFirstWindowAlerts</ScreenID>
+		<Size>
+			<CX>216</CX>
+			<CY>24</CY>
+		</Size>
+		<Style_Checkbox>true</Style_Checkbox>
+		<Text>Hide future first use alerts.</Text>
+		<TooltipReference>Hides future first window use alerts. Existing ones will remain available until dismissed.</TooltipReference>
+		<Template>BDT_CheckboxWithText</Template>
+		<DecalSize>
+			<CX>20</CX>
+			<CY>20</CY>
+		</DecalSize>
+		<TextOffsetX>12</TextOffsetX>
+	</Button>
+	<Screen item="ALW_Buttons_Screen">
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<TopAnchorOffset>30</TopAnchorOffset>
+		<BottomAnchorOffset>6</BottomAnchorOffset>
+		<LeftAnchorOffset>444</LeftAnchorOffset>
+		<RightAnchorOffset>6</RightAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<DrawTemplate>WDT_Def</DrawTemplate>
+		<Style_Border>false</Style_Border>
+		<Pieces>ALW_HideFirstWindowAlerts</Pieces>
+		<Pieces>ALW_Action_Button</Pieces>
+		<Pieces>ALW_Close_Button</Pieces>
+		<Pieces>ALW_Dismiss_Button</Pieces>
+	</Screen>
+	<Screen item="AlertWnd">
+		<RelativePosition>false</RelativePosition>
+		<Size>
+			<CX>498</CX>
+			<CY>360</CY>
+		</Size>
+		<Text>Alert</Text>
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Pieces>ALW_Alert_Anim</Pieces>
+		<Pieces>ALW_Message_Box</Pieces>
+		<Pieces>ALW_Buttons_Screen</Pieces>
+	</Screen>
+</XML>

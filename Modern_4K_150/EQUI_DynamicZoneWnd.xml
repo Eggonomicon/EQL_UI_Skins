@@ -1,0 +1,690 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <!-- Current DZ you are assigned -->
+  <Label item="DZ_CurrentDZ">
+    <ScreenID>DZ_CurrentDZ</ScreenID>
+    <Size>
+      <CX>195</CX>
+      <CY>30</CY>
+    </Size>
+    <Text>Instance:</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <BottomAnchorOffset>45</BottomAnchorOffset>
+    <LeftAnchorOffset>6</LeftAnchorOffset>
+    <RightAnchorOffset>120</RightAnchorOffset>
+    <TopAnchorOffset>3</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <Label item="DZ_CurrentDZValue">
+    <ScreenID>DZ_CurrentDZValue</ScreenID>
+    <Size>
+      <CX>450</CX>
+      <CY>30</CY>
+    </Size>
+    <Text />
+    <TextColor>
+      <R>255</R>
+      <G>255</G>
+      <B>0</B>
+    </TextColor>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <BottomAnchorOffset>45</BottomAnchorOffset>
+    <LeftAnchorOffset>93</LeftAnchorOffset>
+    <RightAnchorOffset>6</RightAnchorOffset>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <TopAnchorOffset>3</TopAnchorOffset>
+	<RightAnchorToLeft>false</RightAnchorToLeft>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <!-- END Current DZ you are assigned -->
+  <!-- Leader of the DZ -->
+  <Label item="DZ_Leader">
+    <ScreenID>DZ_Leader</ScreenID>
+    <Location>
+      <X>3</X>
+      <Y>24</Y>
+    </Location>
+    <Size>
+      <CX>98</CX>
+      <CY>30</CY>
+    </Size>
+    <Text>Leader:</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <BottomAnchorOffset>75</BottomAnchorOffset>
+    <LeftAnchorOffset>6</LeftAnchorOffset>
+    <RightAnchorOffset>113</RightAnchorOffset>
+    <TopAnchorOffset>24</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <Label item="DZ_LeaderValue">
+    <ScreenID>DZ_LeaderValue</ScreenID>
+    <Size>
+      <CX>450</CX>
+      <CY>30</CY>
+    </Size>
+    <Text />
+    <TextColor>
+      <R>255</R>
+      <G>255</G>
+      <B>0</B>
+    </TextColor>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <LeftAnchorOffset>84</LeftAnchorOffset>
+    <RightAnchorOffset>278</RightAnchorOffset>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <BottomAnchorOffset>75</BottomAnchorOffset>
+    <TopAnchorOffset>24</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <!-- END Leader of the DZ -->
+  <!-- Min/Max players -->
+  <Label item="DZ_NumPlayers">
+    <ScreenID>DZ_NumPlayers</ScreenID>
+    <Text>Number of Players:</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <BottomAnchorOffset>66</BottomAnchorOffset>
+    <LeftAnchorOffset>6</LeftAnchorOffset>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorOffset>105</RightAnchorOffset>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <TopAnchorOffset>45</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <Label item="DZ_NumPlayersValue">
+    <ScreenID>DZ_NumPlayersValue</ScreenID>
+    <Text />
+    <TextColor>
+      <R>255</R>
+      <G>255</G>
+      <B>0</B>
+    </TextColor>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <BottomAnchorOffset>66</BottomAnchorOffset>
+    <LeftAnchorOffset>173</LeftAnchorOffset>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorOffset>203</RightAnchorOffset>
+    <TopAnchorOffset>45</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <Label item="DZ_MinPlayers">
+    <ScreenID>DZ_MinPlayers</ScreenID>
+    <Text>Min Players:</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <LeftAnchorOffset>218</LeftAnchorOffset>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorOffset>321</RightAnchorOffset>
+    <BottomAnchorOffset>66</BottomAnchorOffset>
+    <TopAnchorOffset>45</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <Label item="DZ_MinPlayersValue">
+    <ScreenID>DZ_MinPlayersValue</ScreenID>
+    <Text />
+    <TextColor>
+      <R>255</R>
+      <G>255</G>
+      <B>0</B>
+    </TextColor>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <BottomAnchorOffset>66</BottomAnchorOffset>
+    <LeftAnchorOffset>327</LeftAnchorOffset>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorOffset>357</RightAnchorOffset>
+    <TopAnchorOffset>45</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <Label item="DZ_MaxPlayers">
+    <ScreenID>DZ_MaxPlayers</ScreenID>
+    <Text>Max Players:</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <LeftAnchorOffset>375</LeftAnchorOffset>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorOffset>495</RightAnchorOffset>
+    <BottomAnchorOffset>66</BottomAnchorOffset>
+    <TopAnchorOffset>45</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <Label item="DZ_MaxPlayersValue">
+    <ScreenID>DZ_MaxPlayersValue</ScreenID>
+    <Text />
+    <TextColor>
+      <R>255</R>
+      <G>255</G>
+      <B>0</B>
+    </TextColor>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <BottomAnchorOffset>66</BottomAnchorOffset>
+    <LeftAnchorOffset>489</LeftAnchorOffset>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorOffset>519</RightAnchorOffset>
+    <TopAnchorOffset>45</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+  </Label>
+  <!-- END Leader of the DZ -->
+  <!-- DZ Quit Button -->
+  <Button item="DZ_Quit">
+    <ScreenID>DZ_Quit</ScreenID>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Quit Instance</Text>
+		<TextColor>
+			<R>240</R>
+			<G>240</G>
+			<B>240</B>
+		</TextColor>
+		<BackgroundTextureTint>
+			<R>250</R>
+			<G>0</G>
+			<B>0</B>
+		</BackgroundTextureTint>	
+    <Template>BDT_Normal</Template>
+    <BottomAnchorOffset>3</BottomAnchorOffset>
+    <LeftAnchorOffset>129</LeftAnchorOffset>
+    <RightAnchorOffset>3</RightAnchorOffset>
+    <TopAnchorOffset>39</TopAnchorOffset>	
+    <LeftAnchorToLeft>false</LeftAnchorToLeft>
+	<RightAnchorToLeft>false</RightAnchorToLeft>
+	<TopAnchorToTop>false</TopAnchorToTop>
+	<BottomAnchorToTop>false</BottomAnchorToTop>
+    <AutoStretch>true</AutoStretch>
+  </Button>
+  <!-- END DZ Quit Button -->
+  <!-- DZ Find Switch Button -->
+  <Button item="DZ_FindSwitch">
+    <ScreenID>DZ_FindSwitch</ScreenID>
+    <Location>
+      <X>315</X>
+      <Y>225</Y>
+    </Location>
+    <Size>
+      <CX>210</CX>
+      <CY>36</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Find Switch</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Button item="DZ_CancelFindSwitch">
+    <ScreenID>DZ_CancelFindSwitch</ScreenID>
+    <Location>
+      <X>315</X>
+      <Y>225</Y>
+    </Location>
+    <Size>
+      <CX>210</CX>
+      <CY>36</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Cancel Find Switch</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <!-- END DZ Find Button -->
+  <!-- DZ members -->
+  <Listbox item="DZ_MemberList">
+    <ScreenID>DZ_MemberList</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <RelativePosition>true</RelativePosition>
+    <Style_Border>true</Style_Border>
+    <Style_VScroll>true</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <AutoStretch>true</AutoStretch>
+    <LeftAnchorOffset>3</LeftAnchorOffset>
+    <RightAnchorOffset>3</RightAnchorOffset>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <TopAnchorOffset>72</TopAnchorOffset>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <BottomAnchorOffset>0</BottomAnchorOffset>
+    <Columns>
+      <Width>240</Width>
+      <Heading>Members:</Heading>
+    </Columns>
+    <Columns>
+      <Width>150</Width>
+      <Heading>Status:</Heading>
+    </Columns>
+	<Columns>
+      <Width>150</Width>
+      <Heading>Flagged:</Heading>
+    </Columns>
+  </Listbox>
+  <!-- END members -->
+  <!-- DZ Timers -->
+  <Label item="DZ_TimerLabel">
+    <ScreenID>DZ_TimerLabel</ScreenID>
+    <Size>
+      <CX>375</CX>
+      <CY>30</CY>
+    </Size>
+    <Text>Instance Timers:</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+    <BottomAnchorOffset>24</BottomAnchorOffset>
+    <LeftAnchorOffset>6</LeftAnchorOffset>
+    <RightAnchorOffset>390</RightAnchorOffset>
+    <TopAnchorOffset>0</TopAnchorOffset>
+    <AutoStretch>true</AutoStretch>
+    <TopAnchorToTop>true</TopAnchorToTop>
+    <BottomAnchorToTop>true</BottomAnchorToTop>
+  </Label>
+  <Listbox item="DZ_TimerList">
+    <ScreenID>DZ_TimerList</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <RelativePosition>true</RelativePosition>
+    <Size>
+      <CX>0</CX>
+      <CY>0</CY>
+    </Size>
+    <Style_Border>true</Style_Border>
+    <Style_VScroll>true</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <TopAnchorToTop>true</TopAnchorToTop>
+    <AutoStretch>true</AutoStretch>
+    <TopAnchorOffset>27</TopAnchorOffset>
+    <BottomAnchorOffset>69</BottomAnchorOffset>
+    <LeftAnchorOffset>3</LeftAnchorOffset>
+    <RightAnchorOffset>3</RightAnchorOffset>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <Columns>
+      <Width>150</Width>
+      <Heading>Lockout Time</Heading>
+    </Columns>
+    <Columns>
+      <Width>203</Width>
+      <Heading>Instance Name</Heading>
+    </Columns>
+    <Columns>
+      <Width>203</Width>
+      <Heading>Event Name</Heading>
+    </Columns>
+  </Listbox>
+  <!-- END members -->
+  <!-- DZ Leader stuff -->
+  <Label item="DZ_Leader_Title">
+    <ScreenID>DZ_Leader_Title</ScreenID>
+    <Font>6</Font>
+    <Location>
+      <X>15</X>
+      <Y>0</Y>
+    </Location>
+    <Size>
+      <CX>375</CX>
+      <CY>30</CY>
+    </Size>
+    <Text></Text>
+    <TextColor>
+      <R>255</R>
+      <G>0</G>
+      <B>0</B>
+    </TextColor>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+  </Label>
+  <Label item="DZ_Leader_Target">
+    <ScreenID>DZ_Leader_Target</ScreenID>
+    <Location>
+      <X>6</X>
+      <Y>48</Y>
+    </Location>
+    <Size>
+      <CX>150</CX>
+      <CY>24</CY>
+    </Size>
+    <Text>Player Targeted:</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+  </Label>
+  <Label item="DZ_Leader_TargetValue">
+    <ScreenID>DZ_Leader_TargetValue</ScreenID>
+    <Location>
+      <X>165</X>
+      <Y>48</Y>
+    </Location>
+    <Size>
+      <CX>225</CX>
+      <CY>24</CY>
+    </Size>
+    <Text />
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+  </Label>
+  <!-- Buttons -->
+  <Button item="DZ_Leader_Add">
+    <ScreenID>DZ_Leader_Add</ScreenID>
+    <Location>
+      <X>3</X>
+      <Y>75</Y>
+    </Location>
+    <Size>
+      <CX>117</CX>
+      <CY>36</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Add</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Button item="DZ_Leader_Remove">
+    <ScreenID>DZ_Leader_Remove</ScreenID>
+    <Location>
+      <X>123</X>
+      <Y>75</Y>
+    </Location>
+    <Size>
+      <CX>117</CX>
+      <CY>36</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Remove</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Button item="DZ_Leader_MakeLeader">
+    <ScreenID>DZ_Leader_MakeLeader</ScreenID>
+    <Location>
+      <X>243</X>
+      <Y>75</Y>
+    </Location>
+    <Size>
+      <CX>117</CX>
+      <CY>36</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Make Leader</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Button item="DZ_Leader_InviteRaid">
+    <ScreenID>DZ_Leader_InviteRaid</ScreenID>
+    <Location>
+      <X>363</X>
+      <Y>75</Y>
+    </Location>
+    <Size>
+      <CX>0</CX>
+      <CY>0</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Invite Raid</Text>
+    <TooltipReference>Invite anyone who is in your raid but not in your expedition.</TooltipReference>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Button item="DZ_Leader_InviteTask">
+    <ScreenID>DZ_Leader_InviteTask</ScreenID>
+    <Location>
+      <X>483</X>
+      <Y>75</Y>
+    </Location>
+    <Size>
+      <CX>0</CX>
+      <CY>0</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Invite Task</Text>
+    <TooltipReference>Invite anyone who is in your shared task but not in your expedition.</TooltipReference>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Screen item="DZLeaderSection">
+    <ScreenID>DZLeaderSection</ScreenID>
+    <RelativePosition>true</RelativePosition>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>true</Style_Transparent>
+    <Text>Leader Options</Text>
+    <DrawTemplate>WDT_Rounded</DrawTemplate>
+    <Style_Titlebar>false</Style_Titlebar>
+    <Style_Closebox>false</Style_Closebox>
+    <Style_Minimizebox>false</Style_Minimizebox>
+    <Style_Border>false</Style_Border>
+    <Style_Sizable>false</Style_Sizable>
+    <Pieces>DZ_Leader_Title</Pieces>
+    <Pieces>DZ_Leader_Target</Pieces>
+    <Pieces>DZ_Leader_TargetValue</Pieces>
+    <Pieces>DZ_Leader_Add</Pieces>
+    <Pieces>DZ_Leader_Remove</Pieces>
+    <Pieces>DZ_Leader_MakeLeader</Pieces>
+    <Pieces>DZ_Leader_InviteRaid</Pieces>
+    <Pieces>DZ_Leader_InviteTask</Pieces>
+	<Pieces>DZ_Quit</Pieces>	
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <BottomAnchorOffset>0</BottomAnchorOffset>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <TopAnchorOffset>114</TopAnchorOffset>
+    <TopAnchorToTop>false</TopAnchorToTop>
+    <AutoStretch>true</AutoStretch>
+  </Screen>
+  <!-- END members -->
+  <Screen item="DynamicZoneTopWnd">
+    <ScreenID>DynamicZoneTopWnd</ScreenID>
+    <Location>
+      <X>0</X>
+      <Y>0</Y>
+    </Location>
+    <Size>
+      <CX>750</CX>
+      <CY>323</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>true</Style_Transparent>
+    <DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
+    <Style_Titlebar>false</Style_Titlebar>
+    <Style_Closebox>false</Style_Closebox>
+    <Style_Minimizebox>false</Style_Minimizebox>
+    <Style_Border>false</Style_Border>
+    <Style_Sizable>false</Style_Sizable>
+    <Pieces>DZ_CurrentDZ</Pieces>
+    <Pieces>DZ_CurrentDZValue</Pieces>
+    <Pieces>DZ_Leader</Pieces>
+    <Pieces>DZ_LeaderValue</Pieces>
+    <Pieces>DZ_MemberList</Pieces>
+<!--     <Pieces>DZ_Quit</Pieces> -->
+    <Pieces>DZ_NumPlayers</Pieces>
+    <Pieces>DZ_NumPlayersValue</Pieces>
+	<Pieces>DZ_MinPlayers</Pieces>
+	<Pieces>DZ_MinPlayersValue</Pieces>
+    <Pieces>DZ_MaxPlayers</Pieces>
+    <Pieces>DZ_MaxPlayersValue</Pieces>
+  </Screen>
+  <Screen item="DynamicZoneBottomWnd">
+    <ScreenID>DynamicZoneBottomWnd</ScreenID>
+    <Location>
+      <X>0</X>
+      <Y>0</Y>
+    </Location>
+    <Size>
+      <CX>750</CX>
+      <CY>323</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>true</Style_Transparent>
+    <DrawTemplate>WDT_RoundedNoTitle</DrawTemplate>
+    <Style_Titlebar>false</Style_Titlebar>
+    <Style_Closebox>false</Style_Closebox>
+    <Style_Minimizebox>false</Style_Minimizebox>
+    <Style_Border>false</Style_Border>
+    <Style_Sizable>false</Style_Sizable>
+    <Pieces>DZ_TimerLabel</Pieces>
+    <Pieces>DZ_TimerList</Pieces>
+    <Pieces>DZLeaderSection</Pieces>
+  </Screen>
+  <VerticalLayoutBox item="DynamicZone_Layout">
+    <ScreenID>DynamicZone_Layout</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <AutoStretch>true</AutoStretch>
+    <LeftAnchorOffset>0</LeftAnchorOffset>
+    <TopAnchorOffset>0</TopAnchorOffset>
+    <RightAnchorOffset>0</RightAnchorOffset>
+    <BottomAnchorOffset>0</BottomAnchorOffset>
+    <TopAnchorToTop>true</TopAnchorToTop>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <Spacing>3</Spacing>
+    <Style_Border>false</Style_Border>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_Transparent>true</Style_Transparent>
+    <Pieces>Screen:DynamicZoneTopWnd</Pieces>
+    <Pieces>Screen:DynamicZoneBottomWnd</Pieces>
+  </VerticalLayoutBox>
+  <!-- The DZ	Window -->
+  <Screen item="DynamicZoneWnd">
+    <RelativePosition>false</RelativePosition>
+    <Location>
+      <X>100</X>
+      <Y>60</Y>
+    </Location>
+    <Size>
+      <CX>603</CX>
+      <CY>600</CY>
+    </Size>
+    <MinHSize>603</MinHSize>
+    <MinVSize>600</MinVSize>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Text>Instance Information</Text>
+    <DrawTemplate>WDT_Rounded</DrawTemplate>
+    <Style_Titlebar>true</Style_Titlebar>
+    <Style_Closebox>true</Style_Closebox>
+    <Style_Minimizebox>true</Style_Minimizebox>
+    <Style_Border>true</Style_Border>
+    <Style_Sizable>true</Style_Sizable>
+    <Pieces>VerticalLayoutBox:DynamicZone_Layout</Pieces>
+  </Screen>
+  <!-- The switch list window -->
+  <Button item="DZSwitchList_OK">
+    <ScreenID>DZSwitchList_OK</ScreenID>
+    <AutoStretch>true</AutoStretch>
+    <LeftAnchorOffset>165</LeftAnchorOffset>
+    <TopAnchorOffset>44</TopAnchorOffset>
+    <RightAnchorOffset>15</RightAnchorOffset>
+    <BottomAnchorOffset>8</BottomAnchorOffset>
+    <TopAnchorToTop>false</TopAnchorToTop>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <LeftAnchorToLeft>false</LeftAnchorToLeft>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>OK</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Button item="DZSwitchList_Cancel">
+    <ScreenID>DZSwitchList_Cancel</ScreenID>
+    <AutoStretch>true</AutoStretch>
+    <LeftAnchorOffset>15</LeftAnchorOffset>
+    <TopAnchorOffset>44</TopAnchorOffset>
+    <RightAnchorOffset>165</RightAnchorOffset>
+    <BottomAnchorOffset>8</BottomAnchorOffset>
+    <TopAnchorToTop>false</TopAnchorToTop>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorToLeft>true</RightAnchorToLeft>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Cancel</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Listbox item="DZSwitchList_List">
+    <ScreenID>DZSwitchList_List</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <AutoStretch>true</AutoStretch>
+    <LeftAnchorOffset>8</LeftAnchorOffset>
+    <TopAnchorOffset>8</TopAnchorOffset>
+    <RightAnchorOffset>8</RightAnchorOffset>
+    <BottomAnchorOffset>68</BottomAnchorOffset>
+    <TopAnchorToTop>true</TopAnchorToTop>
+    <BottomAnchorToTop>false</BottomAnchorToTop>
+    <LeftAnchorToLeft>true</LeftAnchorToLeft>
+    <RightAnchorToLeft>false</RightAnchorToLeft>
+    <Style_Border>true</Style_Border>
+    <Style_VScroll>true</Style_VScroll>
+    <Columns>
+      <Width>120</Width>
+      <Heading>Type:</Heading>
+    </Columns>
+    <Columns>
+      <Width>450</Width>
+      <Heading>Description:</Heading>
+    </Columns>
+    <Columns>
+      <Width>150</Width>
+      <Heading>Leader:</Heading>
+    </Columns>
+  </Listbox>
+  <Screen item="DynamicZoneSwitchListWnd">
+    <RelativePosition>false</RelativePosition>
+    <Location>
+      <X>100</X>
+      <Y>60</Y>
+    </Location>
+    <Size>
+      <CX>750</CX>
+      <CY>225</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Text>Choose which zone to enter</Text>
+    <DrawTemplate>WDT_Rounded</DrawTemplate>
+    <Style_Titlebar>true</Style_Titlebar>
+    <Style_Qmarkbox>true</Style_Qmarkbox>
+    <Style_Closebox>true</Style_Closebox>
+    <Style_Minimizebox>true</Style_Minimizebox>
+    <Style_Border>true</Style_Border>
+    <Style_Sizable>true</Style_Sizable>
+    <Pieces>DZSwitchList_List</Pieces>
+    <Pieces>DZSwitchList_Cancel</Pieces>
+    <Pieces>DZSwitchList_OK</Pieces>
+  </Screen>
+</XML>

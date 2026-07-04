@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+
+	<Label item="BUGW_TypeLabel">
+		<ScreenID>TypeLabel</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>12</LeftAnchorOffset>
+		<TopAnchorOffset>8</TopAnchorOffset>
+		<RightAnchorOffset>72</RightAnchorOffset>
+		<BottomAnchorOffset>32</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Text>Category</Text>
+	</Label>
+	
+	<Combobox item="BUGW_BugTypes">
+		<ScreenID>BugTypes</ScreenID>
+		<DrawTemplate>WDT_InnerSolid</DrawTemplate>
+		<TooltipReference>Please choose a category for your bug report.</TooltipReference>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>84</LeftAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<RightAnchorOffset>216</RightAnchorOffset>
+		<BottomAnchorOffset>32</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<ListHeight>210</ListHeight>
+		<Button>BDT_Combo</Button>
+		<Choices>Other</Choices>
+		<Style_Border>true</Style_Border>
+	</Combobox>
+
+	<Button item="BUGW_LocationButton">
+		<ScreenID>LocationButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>123</LeftAnchorOffset>
+		<TopAnchorOffset>3</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>32</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>false</Style_Checkbox>
+		<TooltipReference>Change the location relating to this bug report to your current location.</TooltipReference>
+		<Text>Update Location</Text>
+		<Template>BDT_SmallNormal</Template>
+	</Button>
+
+	<Label item="BUGW_LocLabel">
+		<ScreenID>Loc</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>300</LeftAnchorOffset>
+		<TopAnchorOffset>8</TopAnchorOffset>
+		<RightAnchorOffset>130</RightAnchorOffset>
+		<BottomAnchorOffset>32</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<Text>0</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>true</AlignRight>
+	</Label>
+
+	<STMLbox item="BUGW_Prompt">
+		<ScreenID>Prompt</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>36</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>228</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>true</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Style_Border>true</Style_Border>
+		<Text>Prompt Area</Text>
+	</STMLbox>
+
+	<Editbox item="BUGW_Edit">
+		<ScreenID>Edit</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_VScroll>true</Style_VScroll>
+		<Style_Border>true</Style_Border>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>234</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>77</BottomAnchorOffset>
+		<TopAnchorToTop>true</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Style_Multiline>true</Style_Multiline>
+	</Editbox>
+
+	<Button item="BUGW_DupButton">
+		<ScreenID>DupButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>5</LeftAnchorOffset>
+		<TopAnchorOffset>51</TopAnchorOffset>
+		<RightAnchorOffset>20</RightAnchorOffset>
+		<BottomAnchorOffset>36</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>true</Style_Checkbox>
+		<TooltipReference>Check this box if you are able to reliably reproduce this bug (be sure to include your steps).</TooltipReference>
+		<Template>BDT_Checkbox</Template>
+	</Button>
+
+	<Label item="BUGW_DupLabel">
+		<ScreenID />
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>24</LeftAnchorOffset>
+		<TopAnchorOffset>51</TopAnchorOffset>
+		<RightAnchorOffset>132</RightAnchorOffset>
+		<BottomAnchorOffset>27</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Text>Can Duplicate</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<Button item="BUGW_CrashButton">
+		<ScreenID>CrashButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>270</LeftAnchorOffset>
+		<TopAnchorOffset>51</TopAnchorOffset>
+		<RightAnchorOffset>285</RightAnchorOffset>
+		<BottomAnchorOffset>36</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>true</Style_Checkbox>
+		<TooltipReference>Check this box if this bug causes your client to crash.</TooltipReference>
+		<Template>BDT_Checkbox</Template>
+	</Button>
+
+	<Label item="BUGW_CrashLabel">
+		<ScreenID />
+		<RelativePosition>true</RelativePosition>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>288</LeftAnchorOffset>
+		<TopAnchorOffset>51</TopAnchorOffset>
+		<RightAnchorOffset>360</RightAnchorOffset>
+		<BottomAnchorOffset>27</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Text>Crash</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<Label item="BUGW_OptionsLabel">
+		<ScreenID />
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>3</LeftAnchorOffset>
+		<TopAnchorOffset>75</TopAnchorOffset>
+		<RightAnchorOffset>288</RightAnchorOffset>
+		<BottomAnchorOffset>51</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Text>Optional Info</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<Button item="BUGW_FlagsButton">
+		<ScreenID>FlagsButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>135</LeftAnchorOffset>
+		<TopAnchorOffset>51</TopAnchorOffset>
+		<RightAnchorOffset>149</RightAnchorOffset>
+		<BottomAnchorOffset>36</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>true</Style_Checkbox>
+		<TooltipReference>Check this box to send your character flags along with the bug info.</TooltipReference>
+		<Template>BDT_Checkbox</Template>
+	</Button>
+
+	<Label item="BUGW_FlagsLabel">
+		<ScreenID />
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>154</LeftAnchorOffset>
+		<TopAnchorOffset>51</TopAnchorOffset>
+		<RightAnchorOffset>276</RightAnchorOffset>
+		<BottomAnchorOffset>27</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Style_Transparent>false</Style_Transparent>
+		<Text>Character Flags</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<Button item="BUGW_TargetButton">
+		<ScreenID>TargetButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>5</LeftAnchorOffset>
+		<TopAnchorOffset>24</TopAnchorOffset>
+		<RightAnchorOffset>20</RightAnchorOffset>
+		<BottomAnchorOffset>10</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<Style_Checkbox>true</Style_Checkbox>
+		<TooltipReference>Check this box to send your current target info along with the bug.</TooltipReference>
+		<Template>BDT_Checkbox</Template>
+	</Button>
+
+	<Label item="BUGW_TargetLabel">
+		<ScreenID />
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>24</LeftAnchorOffset>
+		<TopAnchorOffset>24</TopAnchorOffset>
+		<RightAnchorOffset>108</RightAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>true</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Style_Transparent>false</Style_Transparent>
+		<Text>Target Info:</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<Label item="BUGW_TargetInfo">
+		<ScreenID>TargetInfo</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>120</LeftAnchorOffset>
+		<TopAnchorOffset>24</TopAnchorOffset>
+		<RightAnchorOffset>101</RightAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorToLeft>true</LeftAnchorToLeft>
+		<Text>a death beetle</Text>
+		<NoWrap>true</NoWrap>
+		<AlignCenter>false</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<Button item="BUGW_CancelButton">
+		<ScreenID>CancelButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>96</LeftAnchorOffset>
+		<TopAnchorOffset>65</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>36</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>Click here to close window WITHOUT sending the bug.</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Cancel</Text>
+		<Template>BDT_Square</Template>
+	</Button>
+
+	<Button item="BUGW_SendButton">
+		<ScreenID>SendButton</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<AutoStretch>true</AutoStretch>
+		<LeftAnchorOffset>96</LeftAnchorOffset>
+		<TopAnchorOffset>32</TopAnchorOffset>
+		<RightAnchorOffset>3</RightAnchorOffset>
+		<BottomAnchorOffset>3</BottomAnchorOffset>
+		<TopAnchorToTop>false</TopAnchorToTop>
+		<BottomAnchorToTop>false</BottomAnchorToTop>
+		<RightAnchorToLeft>false</RightAnchorToLeft>
+		<LeftAnchorToLeft>false</LeftAnchorToLeft>
+		<Style_Transparent>false</Style_Transparent>
+		<TooltipReference>Click here to copy the above bug information from the filled in fields for posting on the forum.</TooltipReference>
+		<Style_Checkbox>false</Style_Checkbox>
+		<Text>Post</Text>
+		<Template>BDT_Square</Template>
+	</Button>
+
+	<Screen item="BugReportWindow">
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>84</X>
+			<Y>84</Y>
+		</Location>
+		<Size>
+			<CX>570</CX>
+			<CY>480</CY>
+		</Size>
+		<Text>Report a bug</Text>
+		<Style_VScroll>false</Style_VScroll>
+		<Style_HScroll>false</Style_HScroll>
+		<Style_Transparent>false</Style_Transparent>
+		<DrawTemplate>WDT_Def</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>true</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>true</Style_Sizable>
+		<Pieces>BUGW_TypeLabel</Pieces>
+		<Pieces>BUGW_LocationButton</Pieces>
+		<Pieces>BUGW_LocLabel</Pieces>
+		<Pieces>BUGW_Prompt</Pieces>
+		<Pieces>BUGW_Edit</Pieces>
+		<Pieces>BUGW_DupButton</Pieces>
+		<Pieces>BUGW_DupLabel</Pieces>
+		<Pieces>BUGW_CrashButton</Pieces>
+		<Pieces>BUGW_CrashLabel</Pieces>
+		<Pieces>BUGW_OptionsLabel</Pieces>
+		<Pieces>BUGW_FlagsLabel</Pieces>
+		<Pieces>BUGW_TargetLabel</Pieces>
+		<Pieces>BUGW_FlagsButton</Pieces>
+		<Pieces>BUGW_TargetButton</Pieces>
+		<Pieces>BUGW_TargetInfo</Pieces>
+		<Pieces>BUGW_CancelButton</Pieces>
+		<Pieces>BUGW_SendButton</Pieces>
+		<Pieces>BUGW_BugTypes</Pieces>
+	</Screen>
+
+</XML>

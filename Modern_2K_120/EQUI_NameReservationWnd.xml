@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <STMLbox item="NR_Prompt">
+    <ScreenID>NR_Prompt</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <!--<Font>3</Font>-->
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>24</X>
+      <Y>12</Y>
+    </Location>
+    <Size>
+      <CX>606</CX>
+      <CY>264</CY>
+    </Size>
+    <Text></Text>
+    <NoWrap>false</NoWrap>
+    <AlignLeft>true</AlignLeft>
+  </STMLbox>
+  <STMLbox item="NR_PlayerInfo">
+    <ScreenID>NR_PlayerInfo</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <!--<Font>3</Font>-->
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>24</X>
+      <Y>270</Y>
+    </Location>
+    <Size>
+      <CX>606</CX>
+      <CY>18</CY>
+    </Size>
+    <Text></Text>
+    <NoWrap>false</NoWrap>
+    <AlignLeft>true</AlignLeft>
+  </STMLbox>
+  <Listbox item="NR_ServerList">
+    <ScreenID>NR_ServerList</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <TooltipReference>List of available servers, including your reservations and if your character's name is eligible.</TooltipReference>
+    <RelativePosition>true</RelativePosition>
+    <Style_Border>true</Style_Border>
+    <Style_VScroll>true</Style_VScroll>
+    <Location>
+      <X>24</X>
+      <Y>294</Y>
+    </Location>
+    <Size>
+      <CX>606</CX>
+      <CY>96</CY>
+    </Size>
+    <Columns>
+      <Width>156</Width>
+      <Heading>Server</Heading>
+    </Columns>
+    <Columns>
+      <Width>156</Width>
+      <Heading>Time Required</Heading>
+    </Columns>
+    <Columns>
+      <Width>192</Width>
+      <Heading>Reserved Names</Heading>
+    </Columns>
+    <Columns>
+      <Width>108</Width>
+      <Heading>Eligible</Heading>
+    </Columns>
+  </Listbox>
+  <Button item="NR_RefreshButton">
+    <ScreenID>NR_RefreshButton</ScreenID>
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>534</X>
+      <Y>396</Y>
+    </Location>
+    <Size>
+      <CX>96</CX>
+      <CY>30</CY>
+    </Size>
+    <Style_VScroll>false</Style_VScroll>
+    <Style_HScroll>false</Style_HScroll>
+    <Style_Transparent>false</Style_Transparent>
+    <Style_Checkbox>false</Style_Checkbox>
+    <Text>Refresh</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Button item="NR_DisableReminderButton">
+    <ScreenID>NR_DisableReminderButton</ScreenID>
+    <!--<Font>3</Font>-->
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>22</X>
+      <Y>455</Y>
+    </Location>
+    <Size>
+      <CX>108</CX>
+      <CY>44</CY>
+    </Size>
+    <Style_Transparent>false</Style_Transparent>
+    <!--<TooltipReference/>-->
+    <Style_Checkbox>false</Style_Checkbox>
+    <!--<RadioGroup/>-->
+    <Text>Disable Reminder</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Button item="NR_ReserveButton">
+    <ScreenID>NR_ReserveButton</ScreenID>
+    <!--<Font>3</Font>-->
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>270</X>
+      <Y>444</Y>
+    </Location>
+    <Size>
+      <CX>120</CX>
+      <CY>54</CY>
+    </Size>
+    <Style_Transparent>false</Style_Transparent>
+    <!--<TooltipReference/>-->
+    <Style_Checkbox>false</Style_Checkbox>
+    <!--<RadioGroup/>-->
+    <Text>Reserve Name</Text>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Label item="NR_Quantity">
+    <ScreenID>NR_Quantity</ScreenID>
+    <EQType>680</EQType>
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>534</X>
+      <Y>449</Y>
+    </Location>
+    <Size>
+      <CX>96</CX>
+      <CY>18</CY>
+    </Size>
+    <Text>Quantity: </Text>
+    <NoWrap>true</NoWrap>
+    <AlignRight>true</AlignRight>
+  </Label>
+  <Button item="NR_BuyButton">
+    <ScreenID>NR_BuyButton</ScreenID>
+    <!--<Font>3</Font>-->
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>534</X>
+      <Y>470</Y>
+    </Location>
+    <Size>
+      <CX>96</CX>
+      <CY>30</CY>
+    </Size>
+    <Style_Transparent>false</Style_Transparent>
+    <!--<TooltipReference/>-->
+    <Style_Checkbox>false</Style_Checkbox>
+    <!--<RadioGroup/>-->
+    <Text>Buy Now!</Text>
+    <TextColor>
+      <R>255</R>
+      <G>233</G>
+      <B>129</B>
+    </TextColor>
+    <BackgroundTextureTint>
+      <R>0</R>
+      <G>255</G>
+      <B>0</B>
+    </BackgroundTextureTint>
+    <Template>BDT_Normal</Template>
+  </Button>
+  <Screen item="NameReservationWnd">
+    <!--<ScreenID/>-->
+    <!--<Font/>-->
+    <RelativePosition>false</RelativePosition>
+    <Location>
+      <X>282</X>
+      <Y>144</Y>
+    </Location>
+    <Size>
+      <CX>660</CX>
+      <CY>534</CY>
+    </Size>
+    <Text>Name Reservations</Text>
+    <Style_Transparent>false</Style_Transparent>
+    <!--<TooltipReference/>-->
+    <DrawTemplate>WDT_Rounded</DrawTemplate>
+    <Style_Titlebar>true</Style_Titlebar>
+    <Style_Closebox>true</Style_Closebox>
+    <Style_Minimizebox>false</Style_Minimizebox>
+    <Style_Border>true</Style_Border>
+    <Style_Sizable>false</Style_Sizable>
+    <Pieces>NR_Prompt</Pieces>
+    <Pieces>NR_PlayerInfo</Pieces>
+    <Pieces>NR_ServerList</Pieces>
+    <Pieces>NR_ReserveButton</Pieces>
+    <Pieces>NR_DisableReminderButton</Pieces>
+    <Pieces>NR_BuyButton</Pieces>
+    <Pieces>NR_RefreshButton</Pieces>
+    <Pieces>NR_Quantity</Pieces>
+  </Screen>
+</XML>

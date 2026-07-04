@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+  <Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+  <Button item="LC_CopyHotButtonCheckBox">
+    <ScreenID>LC_CopyHotButtonCheckBox</ScreenID>
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>20</X>
+      <Y>219</Y>
+    </Location>
+    <Size>
+      <CX>24</CX>
+      <CY>24</CY>
+    </Size>
+    <Style_Checkbox>true</Style_Checkbox>
+	<Template>BDT_Checkbox</Template>	
+  </Button>
+  <Label item="LC_CopyHotButtonLabel">
+    <ScreenID>LC_CopyHotButtonLabel</ScreenID>
+    <Font>5</Font>
+    <Text>Hot Buttons</Text>
+    <Size>
+      <CX>111</CX>
+      <CY>39</CY>
+    </Size>
+    <Location>
+      <X>50</X>
+      <Y>219</Y>
+    </Location>
+  </Label>
+  <Button item="LC_CopyHotButtonLoadoutsCheckBox">
+    <ScreenID>LC_CopyHotButtonLoadoutsCheckBox</ScreenID>
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>173</X>
+      <Y>219</Y>
+    </Location>
+    <Size>
+      <CX>24</CX>
+      <CY>24</CY>
+    </Size>
+    <Style_Checkbox>true</Style_Checkbox>
+	<Template>BDT_Checkbox</Template>	
+  </Button>
+  <Label item="LC_CopyHotButtonLoadoutsLabel">
+    <ScreenID>LC_CopyHotButtonLoadoutsLabel</ScreenID>
+    <Font>5</Font>
+    <Text>Loadouts</Text>
+    <Size>
+      <CX>90</CX>
+      <CY>39</CY>
+    </Size>
+    <Location>
+      <X>203</X>
+      <Y>219</Y>
+    </Location>
+  </Label>
+  <Button item="LC_CopySocialsCheckBox">
+    <ScreenID>LC_CopySocialsCheckBox</ScreenID>
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>20</X>
+      <Y>258</Y>
+    </Location>
+    <Size>
+      <CX>24</CX>
+      <CY>24</CY>
+    </Size>
+    <Style_Checkbox>true</Style_Checkbox>
+	<Template>BDT_Checkbox</Template>		
+  </Button>
+  <Label item="LC_CopySocialsLabel">
+    <ScreenID>LC_CopySocialsLabel</ScreenID>
+    <Font>5</Font>
+    <Text>Socials</Text>
+    <Size>
+      <CX>111</CX>
+      <CY>39</CY>
+    </Size>
+    <Location>
+      <X>50</X>
+      <Y>258</Y>
+    </Location>
+  </Label>
+  <Label item="LC_LayoutsLabel">
+    <ScreenID>LC_LayoutsLabel</ScreenID>
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>15</X>
+      <Y>15</Y>
+    </Location>
+    <Size>
+      <CX>150</CX>
+      <CY>21</CY>
+    </Size>
+    <Text>Source Layouts:</Text>
+    <NoWrap>true</NoWrap>
+    <AlignCenter>false</AlignCenter>
+    <AlignRight>false</AlignRight>
+  </Label>
+  <Listbox item="LC_LayoutsList">
+    <ScreenID>LC_LayoutsList</ScreenID>
+    <DrawTemplate>WDT_Inner</DrawTemplate>
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>17</X>
+      <Y>39</Y>
+    </Location>
+    <Size>
+      <CX>729</CX>
+      <CY>312</CY>
+    </Size>
+    <Style_Border>true</Style_Border>
+    <Style_VScroll>true</Style_VScroll>
+	<Columns>
+		<Width>188</Width>
+		<Heading>Last Modified</Heading>
+	</Columns>
+	<Columns>
+		<Width>488</Width>
+		<Heading>File Name</Heading>
+	</Columns>
+  </Listbox>
+  <Button item="LC_CopyButton">
+    <ScreenID>LC_CopyButton</ScreenID>
+    <RelativePosition>true</RelativePosition>
+    <Location>
+      <X>567</X>
+      <Y>369</Y>
+    </Location>
+    <Size>
+      <CX>180</CX>
+      <CY>30</CY>
+    </Size>
+    <Text>Copy</Text>
+    <TooltipReference>Copy the selected file over your current UI.</TooltipReference>
+	<Template>BDT_Normal</Template>		
+  </Button>
+  <!-- Video Modes Screen -->
+  <Screen item="LayoutCopyWindow">
+    <RelativePosition>false</RelativePosition>
+    <Location>
+      <X>320</X>
+      <Y>300</Y>
+    </Location>
+    <Size>
+      <CX>780</CX>
+      <CY>450</CY>
+    </Size>
+    <Text>Copy UI Settings</Text>
+    <DrawTemplate>WDT_Rounded</DrawTemplate>
+    <Style_Titlebar>true</Style_Titlebar>
+    <Style_Closebox>true</Style_Closebox>
+    <Style_Minimizebox>true</Style_Minimizebox>
+    <Style_Border>true</Style_Border>
+    <Style_Sizable>false</Style_Sizable>
+    <Pieces>LC_LayoutsLabel</Pieces>
+    <Pieces>LC_LayoutsList</Pieces>
+    <Pieces>LC_CopyButton</Pieces>
+  </Screen>
+</XML>

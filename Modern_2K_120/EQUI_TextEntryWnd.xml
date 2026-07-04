@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+<XML ID="EQInterfaceDefinitionLanguage">
+	<Schema xmlns="EverQuestData" xmlns:dt="EverQuestDataTypes" />
+
+	<Editbox item="TEW_Entry">
+		<ScreenID>Entry</ScreenID>
+		<DrawTemplate>WDT_Inner</DrawTemplate>
+		<RelativePosition>true</RelativePosition>
+		<Style_Border>true</Style_Border>
+		<Location>
+			<X>3</X>
+			<Y>101</Y>
+		</Location>
+		<Size>
+			<CX>236</CX>
+			<CY>29</CY>
+		</Size>
+	</Editbox>
+
+	<Label item="TEW_Prompt">
+		<ScreenID>Prompt</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>3</X>
+			<Y>3</Y>
+		</Location>
+		<Size>
+			<CX>236</CX>
+			<CY>96</CY>
+		</Size>
+		<Text>Please enter the text prompted:</Text>
+		<NoWrap>false</NoWrap>
+		<AlignCenter>true</AlignCenter>
+		<AlignRight>false</AlignRight>
+	</Label>
+
+	<Button item="TEW_OKButton">
+		<ScreenID>OK</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>36</X>
+			<Y>135</Y>
+		</Location>
+		<Size>
+			<CX>72</CX>
+			<CY>29</CY>
+		</Size>
+		<Style_Transparent>false</Style_Transparent>
+		<!--<TooltipReference/>-->
+		<Style_Checkbox>false</Style_Checkbox>
+		<!--<RadioGroup/>-->
+		<Text>OK</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+
+	<Button item="TEW_CancelButton">
+		<ScreenID>Cancel</ScreenID>
+		<!--<Font>3</Font>-->
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>132</X>
+			<Y>135</Y>
+		</Location>
+		<Size>
+			<CX>72</CX>
+			<CY>29</CY>
+		</Size>
+		<Style_Transparent>false</Style_Transparent>
+		<!--<TooltipReference/>-->
+		<Style_Checkbox>false</Style_Checkbox>
+		<!--<RadioGroup/>-->
+		<Text>Cancel</Text>
+		<Template>BDT_Normal</Template>
+	</Button>
+
+
+	<Screen item="TextEntryWnd">
+		<!--<ScreenID/>-->
+		<!--<Font/>-->
+		<RelativePosition>false</RelativePosition>
+		<Location>
+			<X>312</X>
+			<Y>216</Y>
+		</Location>
+		<Size>
+			<CX>252</CX>
+			<CY>192</CY>
+		</Size>
+		<Text>Enter Text</Text>
+		<Style_Transparent>false</Style_Transparent>
+		<!--<TooltipReference/>-->
+		<DrawTemplate>WDT_Rounded</DrawTemplate>
+		<Style_Titlebar>true</Style_Titlebar>
+		<Style_Closebox>true</Style_Closebox>
+		<Style_Minimizebox>false</Style_Minimizebox>
+		<Style_Border>true</Style_Border>
+		<Style_Sizable>false</Style_Sizable>
+		<Pieces>TEW_Entry</Pieces>
+		<Pieces>TEW_OKButton</Pieces>
+		<Pieces>TEW_CancelButton</Pieces>
+		<Pieces>TEW_Prompt</Pieces>
+	</Screen>
+
+</XML>
