@@ -14,6 +14,12 @@ This repository currently contains the Modern UI line: a dark, high-resolution-f
 | `Modern_4K_120` | 4K version using the 120% scale family. |
 | `Modern_4K_150` | Larger 4K version for players who want bigger controls/text. |
 
+## Screenshots
+
+### Modern_3440x1440_120
+
+![Modern_3440x1440_120 screenshot](screenshots/Modern_3440x1440_120.png)
+
 ## Modern UI Features
 
 - Dark modernized window styling based on EverQuest Legends `default_modern`.
