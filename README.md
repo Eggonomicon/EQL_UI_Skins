@@ -38,7 +38,7 @@ This repository currently contains the Modern UI line: a dark, high-resolution-f
    The common install path is:
 
    ```text
-   E:\EverQuest Legends
+   C:\Users\<YourUsername>\AppData\Roaming\Daybreak Games\EverQuest Legends
    ```
 
    If you installed EverQuest Legends somewhere else, use that install folder instead.
@@ -48,7 +48,7 @@ This repository currently contains the Modern UI line: a dark, high-resolution-f
    Example:
 
    ```text
-   E:\EverQuest Legends\uifiles\Modern_3440x1440_120
+   C:\Users\<YourUsername>\AppData\Roaming\Daybreak Games\EverQuest Legends\uifiles\Modern_3440x1440_120
    ```
 
    For a custom install location, the pattern is:
