@@ -33,16 +33,32 @@ This repository currently contains the Modern UI line: a dark, high-resolution-f
 ## Installation
 
 1. Download or clone this repository.
-2. Copy the desired skin folder into your EverQuest Legends UI folder.
+2. Find your EverQuest Legends install folder.
+
+   The common install path is:
+
+   ```text
+   E:\EverQuest Legends
+   ```
+
+   If you installed EverQuest Legends somewhere else, use that install folder instead.
+
+3. Copy the desired skin folder into the game's `uifiles` folder.
 
    Example:
 
    ```text
-   EverQuest Legends/UIFiles/Modern_3440x1440_120
+   E:\EverQuest Legends\uifiles\Modern_3440x1440_120
    ```
 
-3. In game, open the UI skin loader and choose the copied folder.
-4. Keep your current layout if you want to preserve window positions.
+   For a custom install location, the pattern is:
+
+   ```text
+   <Your EverQuest Legends install folder>\uifiles\<skin folder name>
+   ```
+
+4. In game, open the UI skin loader and choose the copied folder.
+5. Keep your current layout if you want to preserve window positions.
 
 You can also load a skin from chat with:
 
