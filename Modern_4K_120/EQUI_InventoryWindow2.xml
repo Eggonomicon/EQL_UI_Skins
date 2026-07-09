@@ -7053,7 +7053,7 @@
 		<AlignRight>false</AlignRight>
 	</Label>
 	<Label item="IWM_Level">
-<!-- 		<EQType></EQType> -->
+		<EQType>1051</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>72</X>
@@ -7084,7 +7084,7 @@
 		<AlignRight>false</AlignRight>
 	</Label>
 	<Label item="IWM_Class">
-<!-- 		<EQType></EQType> -->
+		<EQType>1050</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>72</X>
@@ -7438,11 +7438,11 @@
 		<EQType>347</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>95</X>
+			<X>72</X>
 			<Y>266</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>255</Text>
@@ -7471,11 +7471,11 @@
 		<EQType>348</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>95</X>
+			<X>72</X>
 			<Y>282</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>255</Text>
@@ -7503,11 +7503,11 @@
 		<EQType>351</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>95</X>
+			<X>72</X>
 			<Y>299</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>255</Text>
@@ -7535,11 +7535,11 @@
 		<EQType>352</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>95</X>
+			<X>72</X>
 			<Y>316</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>255</Text>
@@ -7567,11 +7567,11 @@
 		<EQType>350</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>95</X>
+			<X>72</X>
 			<Y>333</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>255</Text>
@@ -7599,11 +7599,11 @@
 		<EQType>349</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>95</X>
+			<X>72</X>
 			<Y>350</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>255</Text>
@@ -7631,11 +7631,11 @@
 		<EQType>353</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>95</X>
+			<X>72</X>
 			<Y>366</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>255</Text>
@@ -7667,7 +7667,7 @@
 			<Y>395</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text></Text>
@@ -7699,7 +7699,7 @@
 			<Y>412</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text></Text>
@@ -7731,7 +7731,7 @@
 			<Y>429</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text></Text>
@@ -7764,7 +7764,7 @@
 			<Y>446</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text></Text>
@@ -7796,7 +7796,7 @@
 			<Y>462</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text></Text>
@@ -7828,7 +7828,7 @@
 			<Y>479</Y>
 		</Location>
 		<Size>
-			<CX>60</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text></Text>
@@ -8148,6 +8148,19 @@
 		<AnchorToLeft>true</AnchorToLeft>
 		<FirstPieceTemplate>true</FirstPieceTemplate>
 	</TileLayoutBox>
+	<Screen item="IWM_PetStatsScreen">
+		<ScreenID>IWM_PetStatsScreen</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>10</X>
+			<Y>218</Y>
+		</Location>		
+		<Size>
+			<CX>444</CX>
+			<CY>228</CY>
+		</Size>
+		<Pieces>TileLayoutBox:IW_PetInv</Pieces>
+	</Screen>
 	<Page item="IW_PetInvPage">
 		<ScreenID>IW_PetInvPage</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -8167,8 +8180,8 @@
 			<CX>466</CX>
 			<CY>482</CY>
 		</Size>
-		<Pieces>TileLayoutBox:IW_PetInv</Pieces>
-		<Pieces>TileLayoutBox:IWM_Slots</Pieces>
+		<Pieces>TileLayoutBox:IWM_Slots</Pieces>
+		<Pieces>Screen:IWM_PetStatsScreen</Pieces>
 		<Pieces>TileLayoutBox:IWM_PlayerSlots</Pieces>
 		<Pieces>IWM_Name</Pieces>
 		<Pieces>IWM_LevelLabel</Pieces>

@@ -4266,7 +4266,26 @@ TEMPLATES FOR ELEMENTS
 			<SliderArt>SDT_DefSlider</SliderArt>
 			<DrawValue>true</DrawValue>
 		</Slider>
-		<!-- SPELL PARTICLES PAGE -->
+		<Button item="ODP_SpellParticlesFilterSongs">
+			<ScreenID>ODP_SpellParticlesFilterSongs</ScreenID>
+			<Location>
+				<X>12</X>
+				<Y>168</Y>
+			</Location>	
+			<Size>
+				<CX>240</CX>
+				<CY>24</CY>
+			</Size>
+			<Style_Checkbox>true</Style_Checkbox>
+			<Text>Filter Beneficial Songs</Text>
+			<Template>BDT_CheckboxWithText</Template>
+			<DecalSize>
+				<CX>20</CX>
+				<CY>20</CY>
+			</DecalSize>
+			<TextAlignCenter>false</TextAlignCenter>
+			<TextOffsetX>24</TextOffsetX>
+		</Button>		<!-- SPELL PARTICLES PAGE -->
 		<Page item="SpellParticlesPage">
 			<ScreenID>SpellParticlesPage</ScreenID>
 			<DrawTemplate>WDT_Def</DrawTemplate>
@@ -4283,7 +4302,8 @@ TEMPLATES FOR ELEMENTS
 			<Pieces>ODP_SpellParticlesOpacitySlider</Pieces>
 			<Pieces>ODP_SpellParticlesFilterCombobox</Pieces>
 			<Pieces>ODP_SpellParticlesDensityCombobox</Pieces>
-			<Pieces>ODP_SpellParticlesNearClipCombobox</Pieces>
+			<Pieces>ODP_SpellParticlesNearClipCombobox</Pieces>
+			<Pieces>ODP_SpellParticlesFilterSongs</Pieces>
 		</Page>
 		<!-- ENV PARTICLES CLIP PLANE COMBOBOX -->
 		<Label item="ODP_EnvironmentParticlesNearClipLabel">
@@ -4387,149 +4407,6 @@ TEMPLATES FOR ELEMENTS
 			<Pieces>ODP_EnvironmentParticlesDensityCombobox</Pieces>
 			<Pieces>ODP_EnvironmentParticlesNearClipCombobox</Pieces>
 		</Page>
-		<!-- PLAYER PARTICLES CLIP PLANE COMBOBOX -->		
-		<Label item="ODP_ActorParticlesNearClipLabel">
-			<ScreenID>ODP_ActorParticlesNearClipLabel</ScreenID>
-			<Location>
-				<X>12</X>
-				<Y>12</Y>
-			</Location>
-			<Size>
-				<CX>120</CX>
-				<CY>17</CY>
-			</Size>
-			<Text>Near Clip:</Text>
-			<NoWrap>true</NoWrap>
-			<AlignCenter>false</AlignCenter>
-			<AlignRight>false</AlignRight>
-		</Label>
-		<Combobox item="ODP_ActorParticlesNearClipCombobox">
-			<ScreenID>ODP_ActorParticlesNearClipCombobox</ScreenID>
-			<DrawTemplate>WDT_InnerSolid</DrawTemplate>
-			<Location>
-				<X>90</X>
-				<Y>8</Y>
-			</Location>
-			<Size>
-				<CX>120</CX>
-				<CY>29</CY>
-			</Size>
-			<ListHeight>120</ListHeight>
-			<Button>BDT_Combo</Button>
-			<Style_Border>true</Style_Border>
-			<Choices>Near</Choices>
-			<Choices>Medium</Choices>
-			<Choices>Far</Choices>
-			<Choices>Farthest</Choices>
-		</Combobox>
-		<!-- PLAYER PARTICLES DENSITY COMBOBOX -->	
-		<Label item="ODP_ActorParticlesDensityLabel">
-			<ScreenID>ODP_ActorParticlesDensityLabel</ScreenID>
-			<Location>
-				<X>12</X>
-				<Y>48</Y>
-			</Location>
-			<Size>
-				<CX>120</CX>
-				<CY>17</CY>
-			</Size>
-			<Text>Density:</Text>
-			<NoWrap>true</NoWrap>
-			<AlignCenter>false</AlignCenter>
-			<AlignRight>false</AlignRight>
-		</Label>
-		<Combobox item="ODP_ActorParticlesDensityCombobox">
-			<ScreenID>ODP_ActorParticlesDensityCombobox</ScreenID>
-			<DrawTemplate>WDT_InnerSolid</DrawTemplate>
-			<Location>
-				<X>90</X>
-				<Y>44</Y>
-			</Location>
-			<Size>
-				<CX>120</CX>
-				<CY>29</CY>
-			</Size>
-			<ListHeight>120</ListHeight>
-			<Button>BDT_Combo</Button>
-			<Style_Border>true</Style_Border>
-			<Choices>Off</Choices>
-			<Choices>Low</Choices>
-			<Choices>Medium</Choices>
-			<Choices>High</Choices>
-		</Combobox>
-		<!-- PLAYER PARTICLES FILTER COMBOBOX -->		
-		<Label item="ODP_ActorParticlesFilterLabel">
-			<ScreenID>ODP_ActorParticlesFilterLabel</ScreenID>
-			<Location>
-				<X>12</X>
-				<Y>84</Y>
-			</Location>
-			<Size>
-				<CX>120</CX>
-				<CY>17</CY>
-			</Size>
-			<Text>On For:</Text>
-			<NoWrap>true</NoWrap>
-			<AlignCenter>false</AlignCenter>
-			<AlignRight>false</AlignRight>
-		</Label>
-		<Combobox item="ODP_ActorParticlesFilterCombobox">
-			<ScreenID>ODP_ActorParticlesFilterCombobox</ScreenID>
-			<DrawTemplate>WDT_InnerSolid</DrawTemplate>
-			<Location>
-				<X>90</X>
-				<Y>80</Y>
-			</Location>
-			<Size>
-				<CX>120</CX>
-				<CY>29</CY>
-			</Size>
-			<ListHeight>144</ListHeight>
-			<Button>BDT_Combo</Button>
-			<Style_Border>true</Style_Border>
-			<Choices>Me</Choices>
-			<Choices>Group</Choices>
-			<Choices>Raid</Choices>
-			<Choices>All PCs</Choices>
-			<Choices>Me + NPC</Choices>
-			<Choices>Group + NPC</Choices>
-			<Choices>Raid + NPC</Choices>
-			<Choices>Everyone</Choices>
-		</Combobox>
-		<!-- PLAYER PARTICLES SLIDER -->	
-		<Slider item="ODP_ActorParticlesOpacitySlider">
-			<ScreenID>ODP_ActorParticlesOpacitySlider</ScreenID>
-			<Location>
-				<X>12</X>
-				<Y>120</Y>
-			</Location>		
-			<Size>
-				<CX>168</CX>
-				<CY>39</CY>
-			</Size>
-			<Text>Opacity</Text>
-			<SliderArt>SDT_DefSlider</SliderArt>
-			<DrawValue>true</DrawValue>
-		</Slider>
-		<!-- PLAYER PARTICLES PAGE -->	
-		<Page item="ActorParticlesPage">
-			<ScreenID>ActorParticlesPage</ScreenID>
-			<DrawTemplate>WDT_Def</DrawTemplate>
-			<TabText>Player</TabText>
-			<TabTextActiveColor>
-				<R>255</R>
-				<G>255</G>
-				<B>0</B>
-			</TabTextActiveColor>
-			<Style_Sizable>true</Style_Sizable>
-			<Pieces>ODP_ActorParticlesNearClipLabel</Pieces>
-			<Pieces>ODP_ActorParticlesDensityLabel</Pieces>
-			<Pieces>ODP_ActorParticlesFilterLabel</Pieces>
-			<Pieces>ODP_ActorParticlesOpacitySlider</Pieces>
-			<Pieces>ODP_ActorParticlesFilterCombobox</Pieces>
-			<Pieces>ODP_ActorParticlesDensityCombobox</Pieces>
-			<Pieces>ODP_ActorParticlesNearClipCombobox</Pieces>
-		</Page>
 		<!-- PARTICLES TABBOX -->
 		<TabBox item="ODP_ParticlesTabs">
 			<ScreenID>ODP_ParticlesTabs</ScreenID>
@@ -4539,13 +4416,12 @@ TEMPLATES FOR ELEMENTS
 			</Location>
 			<Size>
 				<CX>222</CX>
-				<CY>204</CY>
+				<CY>234</CY>
 			</Size>
 			<TabBorderTemplate>FT_DefTabBorder</TabBorderTemplate>
 			<PageBorderTemplate>FT_DefPageBorder</PageBorderTemplate>
 			<Pages>Page:SpellParticlesPage</Pages>
 			<Pages>Page:EnvironmentParticlesPage</Pages>
-			<Pages>Page:ActorParticlesPage</Pages>
 		</TabBox>
 		<!-- CARD FEATURES LABEL AND LIST -->
 		<Label item="ADOW_CardFeaturesLabel">
@@ -4554,7 +4430,7 @@ TEMPLATES FOR ELEMENTS
 			<RelativePosition>true</RelativePosition>
 			<Location>
 				<X>222</X>
-				<Y>240</Y>
+				<Y>276</Y>
 			</Location>
 			<Size>
 				<CX>192</CX>
@@ -4585,7 +4461,7 @@ TEMPLATES FOR ELEMENTS
 			<RelativePosition>true</RelativePosition>
 			<Location>
 				<X>222</X>
-				<Y>257</Y>
+				<Y>293</Y>
 			</Location>
 			<Size>
 				<CX>222</CX>

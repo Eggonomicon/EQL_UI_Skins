@@ -5693,7 +5693,7 @@
 		<AlignRight>false</AlignRight>
 	</Label>	
 	<Label item="IWM_Level">
-<!-- 		<EQType></EQType> -->
+		<EQType>1051</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>72</X>
@@ -5724,7 +5724,7 @@
 		<AlignRight>false</AlignRight>
 	</Label>	
 	<Label item="IWM_Class">
-<!-- 		<EQType></EQType> -->
+		<EQType>1050</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
 			<X>72</X>
@@ -6378,7 +6378,7 @@
 			<CX>144</CX>
 			<CY>17</CY>
 		</Size>
-		<Text>Pet Stats and Resists</Text>
+		<Text>Pet Stats</Text>
 		<TextColor>
 			<R>138</R>
 			<G>163</G>
@@ -6416,11 +6416,11 @@
 		<EQType>347</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>156</X>
+			<X>72</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6459,11 +6459,11 @@
 		<EQType>348</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>156</X>
+			<X>72</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6501,11 +6501,11 @@
 		<EQType>351</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>156</X>
+			<X>72</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6543,11 +6543,11 @@
 		<EQType>352</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>156</X>
+			<X>72</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6585,11 +6585,11 @@
 		<EQType>350</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>156</X>
+			<X>72</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6627,11 +6627,11 @@
 		<EQType>349</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>156</X>
+			<X>72</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6668,11 +6668,11 @@
 		<EQType>353</EQType>
 		<RelativePosition>true</RelativePosition>
 		<Location>
-			<X>156</X>
+			<X>72</X>
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6714,7 +6714,7 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6756,7 +6756,7 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6798,7 +6798,7 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6841,7 +6841,7 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6883,7 +6883,7 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -6925,7 +6925,7 @@
 			<Y>0</Y>
 		</Location>
 		<Size>
-			<CX>42</CX>
+			<CX>138</CX>
 			<CY>17</CY>
 		</Size>
 		<Text>0</Text>
@@ -7075,13 +7075,9 @@
 	
 	<TileLayoutBox item="IW_PetInv">
 		<RelativePosition>true</RelativePosition>
-		<Location>
-			<X>10</X>
-			<Y>216</Y>
-		</Location>
 		<Size>
-			<CX>390</CX>
-			<CY>270</CY>
+			<CX>444</CX>
+			<CY>228</CY>
 		</Size>
 		<Style_Transparent>true</Style_Transparent>
 		<Spacing>3</Spacing>
@@ -7093,13 +7089,13 @@
 		<Pieces>Screen:IWM_PetVitalsLabelScreen</Pieces>
 		<Pieces>Screen:IWM_HPScreen</Pieces>
 		<Pieces>Screen:IWM_ManaScreen</Pieces>
-		<Pieces>Screen:IWM_EnduranceScreen</Pieces>
+		<!-- 		<Pieces>Screen:IWM_EnduranceScreen</Pieces> -->
 		<Pieces>Screen:IWM_ArmorClassScreen</Pieces>
 		<Pieces>Screen:IWM_AttackScreen</Pieces>
 		<Pieces>Screen:IWM_HasteScreen</Pieces>
 		<Pieces>Screen:IWM_CombatHPRegenScreen</Pieces>
 		<Pieces>Screen:IWM_CombatManaRegenScreen</Pieces>
-		<Pieces>Screen:IWM_CombatEndRegenScreen</Pieces>
+		<!-- 		<Pieces>Screen:IWM_CombatEndRegenScreen</Pieces> -->
 		<Pieces>Screen:IWM_StatsSpacerScreen</Pieces>
 		<Pieces>Screen:IWM_StatsLabelScreen</Pieces>
 		<Pieces>Screen:IWM_StrengthScreen</Pieces>
@@ -7109,13 +7105,26 @@
 		<Pieces>Screen:IWM_AgilityScreen</Pieces>		
 		<Pieces>Screen:IWM_DexterityScreen</Pieces>
 		<Pieces>Screen:IWM_CharismaScreen</Pieces>
-		<Pieces>Screen:IWM_MagicScreen</Pieces>
-		<Pieces>Screen:IWM_FireScreen</Pieces>
-		<Pieces>Screen:IWM_ColdScreen</Pieces>
-		<Pieces>Screen:IWM_DiseaseScreen</Pieces>
-		<Pieces>Screen:IWM_PoisonScreen</Pieces>
-		<Pieces>Screen:IWM_CorruptionScreen</Pieces>
+		<!-- 		<Pieces>Screen:IWM_MagicScreen</Pieces>
+				<Pieces>Screen:IWM_FireScreen</Pieces>
+				<Pieces>Screen:IWM_ColdScreen</Pieces>
+				<Pieces>Screen:IWM_DiseaseScreen</Pieces>
+				<Pieces>Screen:IWM_PoisonScreen</Pieces>
+				<Pieces>Screen:IWM_CorruptionScreen</Pieces> -->
 	</TileLayoutBox>
+	<Screen item="IWM_PetStatsScreen">
+		<ScreenID>IWM_PetStatsScreen</ScreenID>
+		<RelativePosition>true</RelativePosition>
+		<Location>
+			<X>10</X>
+			<Y>218</Y>
+		</Location>		
+		<Size>
+			<CX>444</CX>
+			<CY>228</CY>
+		</Size>
+		<Pieces>TileLayoutBox:IW_PetInv</Pieces>
+	</Screen>
 	<Page item="IW_PetInvPage">
 		<ScreenID>IW_PetInvPage</ScreenID>
 		<RelativePosition>true</RelativePosition>
@@ -7135,8 +7144,8 @@
 			<CX>466</CX>
 			<CY>482</CY>
 		</Size>
-		<Pieces>TileLayoutBox:IW_PetInv</Pieces>
-		<Pieces>TileLayoutBox:IWM_Slots</Pieces>
+		<Pieces>TileLayoutBox:IWM_Slots</Pieces>
+		<Pieces>Screen:IWM_PetStatsScreen</Pieces>
 		<Pieces>IWM_NameLabel</Pieces>
 		<Pieces>IWM_Name</Pieces>
 		<Pieces>IWM_LevelLabel</Pieces>
