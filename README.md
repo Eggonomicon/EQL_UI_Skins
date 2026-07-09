@@ -20,6 +20,10 @@ This repository currently contains the Modern UI line: a dark, high-resolution-f
 
 ![Modern_3440x1440_120 screenshot](screenshots/Modern_3440x1440_120.png)
 
+## Latest Update
+
+The Modern UI line was synced with the latest EverQuest Legends `default_modern` patch for the Inventory and Options windows. See [CHANGELOG.md](CHANGELOG.md) for the full update notes.
+
 ## Modern UI Features
 
 - Dark modernized window styling based on EverQuest Legends `default_modern`.
